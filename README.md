@@ -112,3 +112,18 @@ Following the definition of the user stories, we utilise Trello as a project man
 ## R5 - Wireframes
 
 ## R6 - Trello Board
+
+[bookSwap Trello Board](https://trello.com/b/BfJSkwUq/bookswap)
+
+Initial setup of the Trello Board for the documentation of the project.
+
+![initial setup](./docs/Trello_initial_setup_2023-06-30.png)
+
+The following working day the documentation progress
+
+![documentation card](./docs/Trello_documentation_2023-07-03.png)
+
+After the user story discussions the Trello Board was set up with the agreed user stories.
+
+![mvp](./docs/Trello_MVP_2023-07-03.png)
+![advanced and nth](./docs/Trello_advanced_and_nice_2023-07-03.png)
