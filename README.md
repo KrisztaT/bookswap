@@ -76,6 +76,24 @@ The inclusion of these elements enhances the clarity and comprehensiveness of th
 
 ## R3 - Application Architecture Diagram
 
+Regarding the architecture, the client requested a high-level overview that encompasses the various technologies involved in building a full stack application. The emphasis was placed on understanding the overall structure rather than delving into specific features. Additionally, Jozsef asked for a concise description to facilitate better comprehension of the tasks performed by the client, server, and database components.
+
+![architecture](./docs/architecture.drawio.png)
+
+The MERN stack architecture is a popular web development stack that consists of four key components: MongoDB, Express.js, React, and Node.js.
+
+* **Client (React)**
+In terms of the architecture, the client plays a crucial role as the front-end component of the application. It takes charge of rendering the user interface, handling user interactions, and facilitating site navigation. By utilising React, a powerful JavaScript library for building user interfaces, the client creates reusable components and effectively manages the application's state.
+To exchange data with the server, the client communicates through API requests. These requests are used to retrieve data from the server or trigger specific actions. By sending these requests, the client can fetch the necessary information from the server's back-end.
+
+* **Server (Node.js with Express.js, Mongoose)**
+The server is built using Node.js, a JavaScript runtime, and Express.js, a web application framework for Node.js. The server handles incoming requests from the client, processes them, and returns responses. Express.js provides an organised way to define routes, controllers, and middlewares. Routes define the API endpoints, controllers handle the logic for each route, and middlewares perform tasks such as authentication or request parsing and so on. Mongoose is an Object Data Modeling (ODM) library for Node.js that provides a higher-level abstraction for MongoDB. It allows the definition of schemas and models to structure and interact with the data stored in MongoDB. Mongoose simplifies tasks like validation, querying, and performing operations on the database.
+
+* **Database (MongoDB)**
+MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It is used for persistent data storage in the MERN stack.
+
+According to the current plan, the client application will be hosted on Netlify, the server will be hosted on Heroku, and the database will be hosted on MongoDB Atlas.
+
 ## R4 - User Stories
 
 For the BookSwap application project with my client Konyvek.hu, we have adopted Scrum methodology to ensure an iterative and collaborative development process. Jozsef has been working closely with me to define and prioritise user stories that align with the project's goals. In our initial discussions, we identified a set of high-level user stories with 3 different personas (lender, borrower and admin) that served as a starting point for our work. As part of our agreement, we decided to prioritise and define the list of functionalities by assigning numbers to establish the order. This approach allows for transparency and incremental development to be implemented effectively. In addition to user stories, I will also define technical stories on the Trello Board to address specific technical aspects of the project.
