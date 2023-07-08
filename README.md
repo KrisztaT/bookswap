@@ -142,6 +142,62 @@ Following the definition of the user stories, we utilise Trello as a project man
 
 ## R5 - Wireframes
 
+In collaboration with Jozsef, the wireframes were developed, incorporating the following overarching requirements obtained during our initial meeting:
+
+1. High-fidelity wireframes to facilitate the client's visualisation of the final product.
+2. The focus is on developing dedicated, targeted pages that cater to specific actions, like lending and borrowing, enabling users to complete all related tasks on a single page without the need to navigate through multiple different pages.
+3. Advanced features are incorporated and visually distinguished in the wireframes through the use of orange highlighting or an orange frame.
+4. Representation of various card states, including pending, accepted, overdue, and other relevant statuses, within the wireframe designs.
+
+In order to ensure efficiency and adherence to the agile methodology, the wireframes presented below were developed through multiple iterations and meetings, closely aligned with the user stories for the development process. During these iterations options such as presenting book information in a table format or to present content on spreading out on separate pages were explored. Table format was not suitable for mobile view and the customer expressed a preference for a concise design that avoids the use of many separate pages. Furthermore, it was necessary to redesign the cards, particularly in tablet view, as the aspect ratio was significantly different from that of the search and book add forms, leading to readability issues with the cards.
+
+Below the mobile view frames showcases the high-level connections between the pages and their functionalities incorporated. For optimal clarity, please open the image using an image viewer.
+
+![High level connections](./docs/wireframes/high_level_functions_and_page_connections.png)
+
+### Home Page
+
+The home page features a navigation bar that displays the site's logo, along with login and join buttons. Placing these buttons in the navigation bar ensures easy access, as the login process is essential for utilising the application. Furthermore, the home page also includes an image, an introduction, and a book section. These elements are for providing users with a clear understanding of the page's purpose and content.
+The spacing, font size, card dimensions, and form sizes, including the input fields, are appropriately adjusted for the desktop, tablet, and mobile views across all the pages. For easy contact with the company, the footer of every page includes social media icons.
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop home](./docs/wireframes/Desktop-Home.jpg)|  ![Tablet home](./docs/wireframes/Tablet-Home.jpg)      |  ![Mobile home](./docs/wireframes/Mobile-Home.jpg)      |
+
+### Login and Join modal
+
+The login and join process on the page is facilitated through the use of modals, which are displayed above the home page content upon clicking on the login or join button. This choice ensures that the modals are brought to the forefront, emphasising their importance in the user journey. Additionally, it enhances user convenience by keeping them within the context of the current page, eliminating the need for navigation to a different location which saves time and effort for users while providing visual continuity. Likewise, users can easily toggle between login and signup within the same interface, providing a cohesive and intuitive experience.
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop login](./docs/wireframes/Desktop_Login_modal.jpg)|  ![Tablet login](./docs/wireframes/Tablet_Login_modal.jpg)      |  ![Mobile login](./docs/wireframes/Mobile_Login_modal.jpg)      |
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop join](./docs/wireframes/Desktop_Join_modal.jpg)|  ![Tablet join](./docs/wireframes/Tablet_Join_modal.jpg)    |  ![Mobile join](./docs/wireframes/Mobile_Join_modal.jpg)      |
+
+### Borrowing Page
+
+As per the client's request, when users log in or join, they are directed to the borrowing page as based on client data it is likely that more users are borrowers than lenders. The display of the hamburger menu in the navigation bar is triggered after the login-join process, ensuring ease of navigation for users. Within the advanced scope of the application, the top section of the page features a concise display of the borrowed books list. Given the standardised borrowing period of 3 weeks, typically no more than 2-3 books are showcased here at the same time. This efficient presentation ensures that the borrowed books list does not occupy excessive space, hence the placement.
+For the borrowing page, a card-based display is used, providing a user-friendly interface. Depending on the status of the borrowing process (pending, accepted, or overdue), the card dynamically presents different borrowing information to the borrower. This tailored approach enhances the clarity and relevance of the displayed information and keep everything in the same page as was requested.
+Below the borrowing section, a book search form is positioned, allowing users to search for and list available books. This search functionality enables users to quickly locate desired books from the collection. Moreover, within the advanced scope of the application, borrowers also have the capability to send borrow requests directly to the lenders.
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop borrowing](./docs/wireframes/Desktop_Borrowing.jpg)|  ![Tablet borrowing](./docs/wireframes/Tablet_Borrowing.jpg)    |  ![Mobile borrowing](./docs/wireframes/Mobile_Lending.jpg)      |
+
+### Lending Page
+
+A book adding form has been implemented alongside the book listings on the lending page. This form allows users to add books to the collection if they are not already included. Below the form, users can find their listed books. Initially, separate tables were created to list the added books and for tracking book requests states. However, this approach proved to be less user-friendly on mobile devices and resulted in a visually complex page layout. Consequently, an alternative solution was sought.
+The current card-based solution provides an intuitive and user-friendly interface. The use of color coding aids users in quickly identifying the state of each card, which is crucial information for lending purposes. For instance, if a book is overdue, the book card border is highlighted in red. Additionally, depending on the status, the lending information section of the card presents relevant details. For example, if a book is requested, the card border is purple, and it displays the borrower's name and request date, along with accept and deny icons. Notably, lenders have the ability to modify book details and their own listing information. However, within the "nice to have" scope, only administrators are granted the authority to modify book details.
+
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop lending](./docs/wireframes/Desktop_Lending.jpg)|  ![Tablet lending](./docs/wireframes/Tablet_Lending.jpg)    |  ![Mobile lending](./docs/wireframes/Mobile_Lending.jpg)      |
+
+As per our previous agreement with Jozsef, following the data flow diagram and wireframing, user stories will be revised and updated as the next step.
+
 ## R6 - Trello Board
 
 [bookSwap Trello Board](https://trello.com/b/BfJSkwUq/bookswap)
