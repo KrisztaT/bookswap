@@ -142,6 +142,8 @@ Following the definition of the user stories, we utilise Trello as a project man
 
 ## R5 - Wireframes
 
+[WireFrames](https://www.figma.com/file/mGdliIbudJmbZTl0WUdvfE/bookSwap?type=design&node-id=0%3A1&mode=design&t=oiaLIOWpWt9wgLaB-1)
+
 In collaboration with Jozsef, the wireframes were developed, incorporating the following overarching requirements obtained during our initial meeting:
 
 1. High-fidelity wireframes to facilitate the client's visualisation of the final product.
