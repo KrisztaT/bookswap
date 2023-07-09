@@ -14,7 +14,7 @@ Please note that the inclusion of Konyvek.hu as part of the context is purely fi
 
 In collaboration with Jozsef, we have identified three tiers of functionality based on the applied agile methodology. These tiers define the progressive levels of features of the project. By dividing the these functionalities into tiers, we can prioritise and implement them incrementally, ensuring a focused and efficient development process. The customer expressed their satisfaction with the Minimal Value Product (MVP) scope and stated that any additional features implemented would be considered a bonus.
 
-1. Minimal Value Product
+### 1. Minimal Value Product
 
 - User Registration: Users can join and create an account to access the functionalities of the application.
 - User Login: Users can log in to access the functionalities of the application.
@@ -24,7 +24,7 @@ In collaboration with Jozsef, we have identified three tiers of functionality ba
 - Book Search for Borrowers: Borrowers can search for books based on the title and in the result list view basic book information and lender's name and email.
 - Borrowers can contact lenders externally via email for borrowing requests.
 
-2. Advanced functionalities
+### 2. Advanced functionalities
 
 - Additional Information for Listed Books: Lenders can provide additional details such as location and condition for their listed books
 - Advanced Book Search: Borrowers can search for books using various search criteria.
@@ -38,9 +38,9 @@ In collaboration with Jozsef, we have identified three tiers of functionality ba
 - Book Image Upload: Lenders have the ability to upload images of books from their computer.
 - Advanced Listing: Book information will be pre-filled based on the title if it was previously added to the database.
 
-3. Nice to have functionalities
+### 3. Nice to have functionalities
 
-- Detailed Book Information: Lenders can provide and borrowers can view detailed book information, including descriptions and book condition.
+- Detailed Book Information: Lenders can provide and borrowers can view detailed book information, including descriptions.
 - Account Management: Users can manage their account settings, such as changing their password or email address.
 - Integration with an API for book data to autofill book details.
 - Internal messaging system between borrowers and lenders.
@@ -123,23 +123,21 @@ To determine the scope of the Minimum Viable Product (MVP), we engaged in furthe
 15. As a **user**, I want the ability to securely log out of the application, ensuring that my platform details remain protected and inaccessible to unauthorised individuals.
 16. As a **user** I would like to be able to navigate between the pages, so I can utilise every functionality.
 
-
 Building upon the MVP, we also discussed additional functionalities during our subsequent meetings, which are categorised as advanced features.
 
 ### Advanced features
 
 17. As a **lender**, I want  to provide additional information such as location and condition for my listed books, so it will be easier for borrowers to make more informed decisions.
 18. As a **borrower**, I want to search for books using various criteria (e.g., title, author, location), so that I can find books more accurately and efficiently.
-19. As a **borrower**, I want to send borrowing requests through the app, so that I can easily communicate my interest in borrowing a specific book.
+19. As a **borrower**, I want to request a book for borrowing through the app, so that I can easily communicate my interest in borrowing a specific book.
 20. As a **lender**, I want to see requested books in my listed books section, so that I can conveniently manage and respond to requests.
 21. As a **lender**, I want to accept or deny borrowing requests within the app, so that I can control the lending process and communicate my decision to borrowers.
 22. As a **lender**, I want to the system to automatically set the due date to 3 weeks from now and list the borrower’s name and email address on the card, so I can communicate with borrower externally via email for lending details, meeting arrangements, and other discussions.
 23. As a **borrower**, I want to list my borrowed books, so that I can track them.
-24. As a **borrower**, I want to view the status of my borrowing requests in my borrowed books list, so that I can know whether my request is accepted, or denied.
+24. As a **borrower**, I want to view the status of my borrowing requests in my borrowed books list, so that I can know whether my request is accepted.
 25. As a **user**, I want the book status to be color-coded based on due dates, so that I can easily identify overdue books and those close to the due date.
 26. As a **lender**, I would like the ability to upload images of books from my computer, so that I can have more options where images are sourced.
 27. As a **lender**, I want the system to auto-fill the information of a book if that is added to the database previously, so the listing would be faster and more convenient.
-
 
 Additionally, we briefly discussed future nice-to-have plans, which are defined at a higher level compared to the MVP and advanced functionalities fit to the agile eco-system.
 
@@ -208,7 +206,6 @@ Below the borrowing section, a book search form is positioned, allowing users to
 A book adding form has been implemented alongside the book listings on the lending page. This form allows users to add books to the collection if they are not already included. Below the form, users can find their listed books. Initially, separate tables were created to list the added books and for tracking book requests states. However, this approach proved to be less user-friendly on mobile devices and resulted in a visually complex page layout. Consequently, an alternative solution was sought.
 The current card-based solution provides an intuitive and user-friendly interface. The use of color coding aids users in quickly identifying the state of each card, which is crucial information for lending purposes. For instance, if a book is overdue, the book card border is highlighted in red. Additionally, depending on the status, the lending information section of the card presents relevant details. For example, if a book is requested, the card border is purple, and it displays the borrower's name and request date, along with accept and deny icons. Notably, lenders have the ability to modify book details and their own listing information. However, within the "nice to have" scope, only administrators are granted the authority to modify book details.
 
-
 | Desktop | Tablet | Mobile |
 |---------|--------|--------|
 |![Desktop lending](./docs/wireframes/Desktop_Lending.jpg)|  ![Tablet lending](./docs/wireframes/Tablet_Lending.jpg)    |  ![Mobile lending](./docs/wireframes/Mobile_Lending.jpg)      |
@@ -227,7 +224,18 @@ The following working day the documentation progress
 
 ![documentation card](./docs/Trello_documentation_2023-07-03.png)
 
-After the user story discussions the Trello Board was set up with the agreed user stories.
+After the discussions on user stories, the Trello Board was established, incorporating the agreed-upon user stories.
 
 ![mvp](./docs/Trello_MVP_2023-07-03.png)
 ![advanced and nth](./docs/Trello_advanced_and_nice_2023-07-03.png)
+
+These screenshots illustrate the progress I made on the tasks outlined for the readme file, including the creation of the data flow diagram, application architecture, and wireframes.
+
+![DFD](./docs/Trello_documentation_DFD_%202023-07-05.png)
+![AAD](./docs/Trello_documentation_AAD_%202023-07-05.png)
+![Wireframes](./docs/Trello_wireframes_%202023-07-07.png)
+
+As mentioned previously, the user stories underwent refinement during the creation of the DFD diagram and wireframes, leading to updates and improvements.
+
+![Updated user stories 1](./docs/Trello_user_stories_update_2023-07-09.png)
+![Updated user stories 2](./docs/Trello_user_stories_update_2_2023-07-09.png)
