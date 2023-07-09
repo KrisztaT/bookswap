@@ -16,21 +16,26 @@ In collaboration with Jozsef, we have identified three tiers of functionality ba
 
 1. Minimal Value Product
 
-- User Registration: Users can sign up and create an account.
-- User Login: Users can log in to access their account.
+- User Registration: Users can join and create an account to access the functionalities of the application.
+- User Login: Users can log in to access the functionalities of the application.
+- User Logout: Users can ensure the protection and privacy of their information and prevent unauthorised access.
+- Add and Edit Books: Lenders can add books to the database of BookSwap and edit their details.
 - Book Listing Management for Lenders: Lenders can create, list, update, and delete their book listings.
-- Book Search for Borrowers: Borrowers can search for books based on the title and view basic book information and lender email.
+- Book Search for Borrowers: Borrowers can search for books based on the title and in the result list view basic book information and lender's name and email.
 - Borrowers can contact lenders externally via email for borrowing requests.
 
 2. Advanced functionalities
 
+- Additional Information for Listed Books: Lenders can provide additional details such as location and condition for their listed books
 - Advanced Book Search: Borrowers can search for books using various search criteria.
 - Borrowing Requests: Borrowers can send borrowing requests through the app.
+- Requested Books in Lender's List: Lenders can conveniently view requested books within their listed books section
 - Request Management for Lenders: Lenders can accept or deny borrowing requests within the app.
 - Requested Books Listing: Borrowers can view the list of their borrowed books.
-- Request Status for Borrowers: Borrowers can view the status of their borrowing requests within the application.
+- Request Status for Borrowers: Borrowers can view the status of their borrowing requests within their borrowed books list.
 - Book Status Tracking: Book status will be color-coded based on due dates for both the lenders and borrowers.
 - Lenders can contact the borrowers instead the other way around via external email.
+- Book Image Upload: Lenders have the ability to upload images of books from their computer.
 - Advanced Listing: Book information will be pre-filled based on the title if it was previously added to the database.
 
 3. Nice to have functionalities
@@ -101,42 +106,52 @@ To determine the scope of the Minimum Viable Product (MVP), we engaged in furthe
 
 ### Minimal Value Product
 
-1. As a **lender**, I want to be able to sign up to the bookSwap platform so that I can manage my book listings.
-2. As a **lender**, I want to be able to log in to the bookSwap platform so that I can manage my book listings.
-3. As a **borrower**, I want to be able to sign up to the bookSwap platform so that I can find books that can be borrowed.
-4. As a **borrower**, I want to be able to log in to the bookSwap platform so that I that I can find books that can be borrowed.
-5. As a **lender**, I want to create a book listing, so that I can share information about the books I have available for borrowing.
-6. As a **lender**, I want to view all my books listed, making it easy for me to see and manage them.
-7. As a **lender**, I want the ability to edit the details of my listed books, such as the title, author, and availability, so that I can keep the information up to date.
-8. As a **lender**, I want to delete a listed book, so that I can remove books that are no longer available for borrowing.
-9. As a **borrower**, I want to be able to search for books by title that are available for borrowing, allowing me to find books that match my interests.
-10. As a **borrower**, I want to view basic book information and the lender's email, so that I can contact them externally via email for borrowing requests.
+1. As a **user**, I need an informative landing page to evaluate the BookSwap platform and make an informed decision about joining.
+2. As a **lender**, I want to be able to sign up to the BookSwap platform so that I can manage my book listings.
+3. As a **lender**, I want to be able to log in to the BookSwap platform so that I can manage my book listings.
+4. As a **borrower**, I want to be able to sign up to the BookSwap platform so that I can find books that can be borrowed.
+5. As a **borrower**, I want to be able to log in to the BookSwap platform so that I that I can find books that can be borrowed.
+6. As a **lender**, I want the ability to add new books to the BookSwap database if they are not already added, so I can add them to my listings.
+7. As a **lender**, I want to edit the details of the books I have added to the database on BookSwap so that I can rectify any mistakes or inaccuracies.
+8. As a **lender**, I want to create a book listing, so that I can share books I have available for borrowing.
+9. As a **lender**, I want to view all my books listed, making it easy for me to see and manage them.
+10. As a **lender**, I want the ability to edit the status of my listed books, so it will be clear to everyone when they are available.
+11. As a **lender**, I want to delete a listed book, so that I can remove books that are no longer available for borrowing.
+12. As a **borrower**, I want to be able to search for books by title that are available for borrowing, allowing me to find books that match my interests.
+13. As a **borrower**, I want a clear display of search results that shows all available copies of books from different lenders, so I can make a decision on which book to borrow.
+14. As a **borrower**, I want to view basic book information and the lender’s name and lender's email, so that I can contact them externally via email for borrowing requests.
+15. As a **user**, I want the ability to securely log out of the application, ensuring that my platform details remain protected and inaccessible to unauthorised individuals.
+16. As a **user** I would like to be able to navigate between the pages, so I can utilise every functionality.
+
 
 Building upon the MVP, we also discussed additional functionalities during our subsequent meetings, which are categorised as advanced features.
 
 ### Advanced features
 
-11. As a **borrower**, I want to search for books using various criteria (e.g., title, author, year), so that I can find books more accurately and efficiently.
-12. As a **borrower**, I want to send borrowing requests through the app, so that I can easily communicate my interest in borrowing a specific book.
-13.	As a **lender**, I want to receive borrowing requests within the app, so that I can conveniently manage and respond to requests.
-14.	As a **lender**, I want to accept and provide due date or deny borrowing requests within the app, so that I can control the lending process and communicate my decision to borrowers.
-15.	As a **borrower**, I want to list my borrowed books list, so that I can track them.
-16.	As a **borrower**, I want to view the status of my borrowing requests within the application, so that I can know whether my request is accepted, or denied.
-17.	As a **user**, I want the book status to be color-coded based on due dates, so that I can easily identify overdue books and those close to the due date.
-18.	As a **lender**, I want to communicate with borrower externally via email for lending details, meeting arrangements, and other discussions.
-19.	As a **lender**, I want the system to auto-fill the information of a book if that is added to the database previously, so the listing would be faster and more convenient.
+17. As a **lender**, I want  to provide additional information such as location and condition for my listed books, so it will be easier for borrowers to make more informed decisions.
+18. As a **borrower**, I want to search for books using various criteria (e.g., title, author, location), so that I can find books more accurately and efficiently.
+19. As a **borrower**, I want to send borrowing requests through the app, so that I can easily communicate my interest in borrowing a specific book.
+20. As a **lender**, I want to see requested books in my listed books section, so that I can conveniently manage and respond to requests.
+21. As a **lender**, I want to accept or deny borrowing requests within the app, so that I can control the lending process and communicate my decision to borrowers.
+22. As a **lender**, I want to the system to automatically set the due date to 3 weeks from now and list the borrower’s name and email address on the card, so I can communicate with borrower externally via email for lending details, meeting arrangements, and other discussions.
+23. As a **borrower**, I want to list my borrowed books, so that I can track them.
+24. As a **borrower**, I want to view the status of my borrowing requests in my borrowed books list, so that I can know whether my request is accepted, or denied.
+25. As a **user**, I want the book status to be color-coded based on due dates, so that I can easily identify overdue books and those close to the due date.
+26. As a **lender**, I would like the ability to upload images of books from my computer, so that I can have more options where images are sourced.
+27. As a **lender**, I want the system to auto-fill the information of a book if that is added to the database previously, so the listing would be faster and more convenient.
+
 
 Additionally, we briefly discussed future nice-to-have plans, which are defined at a higher level compared to the MVP and advanced functionalities fit to the agile eco-system.
 
 ### Nice to haves (these user stories are defined on high level)
 
-20. As a **lender**, I want to provide more information about the book including condition, description, so the borrower can make an informed decision about borrowing and minimise disputes.
-21. As a **borrower**, I want to view detailed book information, including descriptions and book condition, so that I can make informed decisions about borrowing.
-22.	As a **user**, I want to manage my account settings, so that I can update my profile information, change my password, and modify my email or delete my account.
-23.	As a **lender**, I want the platform to integrate with an external API for book data, so that book details can be auto filled based on title or other identifiers, saving time when creating listings.
-24.	As a **user**, I want an internal messaging system between borrowers and lenders within the app, so that I can conveniently communicate and discuss lending details without relying on external email.
-25.	As a **borrower**, I want to rate and provide feedback on borrowed books, so that I can share my experience and help others make informed decisions.
-26.	As an **administrator**, I want to manage user accounts, moderate listings, and have access to an admin dashboard, so that I can ensure the smooth operation of the platform and handle any necessary administrative tasks.
+28. As a **lender**, I want to provide more information about the book including condition, description, so the borrower can make an informed decision about borrowing and minimise disputes.
+29. As a **borrower**, I want to view detailed book information, including descriptions and book condition, so that I can make informed decisions about borrowing.
+30.	As a **user**, I want to manage my account settings, so that I can update my profile information, change my password, and modify my email or delete my account.
+31.	As a **lender**, I want the platform to integrate with an external API for book data, so that book details can be auto filled based on title or other identifiers, saving time when creating listings.
+32.	As a **user**, I want an internal messaging system between borrowers and lenders within the app, so that I can conveniently communicate and discuss lending details without relying on external email.
+33.	As a **borrower**, I want to rate and provide feedback on borrowed books, so that I can share my experience and help others make informed decisions.
+34.	As an **administrator**, I want to manage user accounts, moderate listings, moderate books, and have access to an admin dashboard, so that I can ensure the smooth operation of the platform and handle any necessary administrative tasks.
 
 Following the definition of the user stories, we utilise Trello as a project management tool to create task cards for the MVP and advanced user stories and a collection to the nice to haves. By adopting this approach, we will be able to efficiently monitor and oversee the development process. As the project progresses, each user story will be further broken down into actionable steps. It is important to note that changes are a natural part of the process, and as such, the Trello Board will be continuously refined to accommodate any modifications.
 
@@ -147,7 +162,7 @@ Following the definition of the user stories, we utilise Trello as a project man
 In collaboration with Jozsef, the wireframes were developed, incorporating the following overarching requirements obtained during our initial meeting:
 
 1. High-fidelity wireframes to facilitate the client's visualisation of the final product.
-2. The focus is on developing dedicated, targeted pages that cater to specific actions, like lending and borrowing, enabling users to complete all related tasks on a single page without the need to navigate through multiple different pages.
+2. The focus is on developing dedicated, targeted pages that cater to specific role based actions, like lending or borrowing, enabling users to complete all related tasks on a single page without the need to navigate through multiple different pages.
 3. Advanced features are incorporated and visually distinguished in the wireframes through the use of orange highlighting or an orange frame.
 4. Representation of various card states, including pending, accepted, overdue, and other relevant statuses, within the wireframe designs.
 
@@ -180,7 +195,7 @@ The login and join process on the page is facilitated through the use of modals,
 
 ### Borrowing Page
 
-As per the client's request, when users log in or join, they are directed to the borrowing page as based on client data it is likely that more users are borrowers than lenders. The display of the hamburger menu in the navigation bar is triggered after the login-join process, ensuring ease of navigation for users. Within the advanced scope of the application, the top section of the page features a concise display of the borrowed books list. Given the standardised borrowing period of 3 weeks, typically no more than 2-3 books are showcased here at the same time. This efficient presentation ensures that the borrowed books list does not occupy excessive space, hence the placement.
+As per the client's request, when users log in or join, they are directed to the borrowing page as based on client's data it is highly likely that more users are borrowers than lenders. The display of the hamburger menu in the navigation bar is triggered after the login-join process, ensuring ease of navigation for users. Within the advanced scope of the application, the top section of the page features a concise display of the borrowed books list. Given the standardised borrowing period of 3 weeks, typically no more than 2-3 books are showcased here at the same time. This efficient presentation ensures that the borrowed books list does not occupy excessive space, hence the placement.
 For the borrowing page, a card-based display is used, providing a user-friendly interface. Depending on the status of the borrowing process (pending, accepted, or overdue), the card dynamically presents different borrowing information to the borrower. This tailored approach enhances the clarity and relevance of the displayed information and keep everything in the same page as was requested.
 Below the borrowing section, a book search form is positioned, allowing users to search for and list available books. This search functionality enables users to quickly locate desired books from the collection. Moreover, within the advanced scope of the application, borrowers also have the capability to send borrow requests directly to the lenders.
 
