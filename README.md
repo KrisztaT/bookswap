@@ -1,4 +1,4 @@
-# BookSwap - Share. Swap. Explore.
+# BookSwap - Share. Swap. Explore
 
 ## R1 - Description of the website
 
@@ -87,14 +87,14 @@ Regarding the architecture, the client requested a high-level overview that enco
 
 The MERN stack architecture is a popular web development stack that consists of four key components: MongoDB, Express.js, React, and Node.js.
 
-* **Client (React)**
+- **Client (React)**
 In terms of the architecture, the client plays a crucial role as the front-end component of the application. It takes charge of rendering the user interface, handling user interactions, and facilitating site navigation. By utilising React, a powerful JavaScript library for building user interfaces, the client creates reusable components and effectively manages the application's state.
 To exchange data with the server, the client communicates through API requests. These requests are used to retrieve data from the server or trigger specific actions. By sending these requests, the client can fetch the necessary information from the server's back-end.
 
-* **Server (Node.js with Express.js, Mongoose)**
+- **Server (Node.js with Express.js, Mongoose)**
 The server is built using Node.js, a JavaScript runtime, and Express.js, a web application framework for Node.js. The server handles incoming requests from the client, processes them, and returns responses. Express.js provides an organised way to define routes, controllers, and middlewares. Routes define the API endpoints, controllers handle the logic for each route, and middlewares perform tasks such as authentication or request parsing and so on. Mongoose is an Object Data Modeling (ODM) library for Node.js that provides a higher-level abstraction for MongoDB. It allows the definition of schemas and models to structure and interact with the data stored in MongoDB. Mongoose simplifies tasks like validation, querying, and performing operations on the database.
 
-* **Database (MongoDB)**
+- **Database (MongoDB)**
 MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It is used for persistent data storage in the MERN stack.
 
 According to the current plan, the client application will be hosted on Netlify, the server will be hosted on Heroku, and the database will be hosted on MongoDB Atlas.
@@ -107,49 +107,47 @@ To determine the scope of the Minimum Viable Product (MVP), we engaged in furthe
 ### Minimal Value Product
 
 1. As a **user**, I need an informative landing page to evaluate the BookSwap platform and make an informed decision about joining.
-2. As a **lender**, I want to be able to sign up to the BookSwap platform so that I can manage my book listings.
-3. As a **lender**, I want to be able to log in to the BookSwap platform so that I can manage my book listings.
-4. As a **borrower**, I want to be able to sign up to the BookSwap platform so that I can find books that can be borrowed.
-5. As a **borrower**, I want to be able to log in to the BookSwap platform so that I that I can find books that can be borrowed.
-6. As a **lender**, I want the ability to add new books to the BookSwap database if they are not already added, so I can add them to my listings.
-7. As a **lender**, I want to edit the details of the books I have added to the database on BookSwap so that I can rectify any mistakes or inaccuracies.
-8. As a **lender**, I want to create a book listing, so that I can share books I have available for borrowing.
-9. As a **lender**, I want to view all my books listed, making it easy for me to see and manage them.
-10. As a **lender**, I want the ability to edit the status of my listed books, so it will be clear to everyone when they are available.
-11. As a **lender**, I want to delete a listed book, so that I can remove books that are no longer available for borrowing.
-12. As a **borrower**, I want to be able to search for books by title that are available for borrowing, allowing me to find books that match my interests.
-13. As a **borrower**, I want a clear display of search results that shows all available copies of books from different lenders, so I can make a decision on which book to borrow.
-14. As a **borrower**, I want to view basic book information and the lender’s name and lender's email, so that I can contact them externally via email for borrowing requests.
-15. As a **user**, I want the ability to securely log out of the application, ensuring that my platform details remain protected and inaccessible to unauthorised individuals.
-16. As a **user** I would like to be able to navigate between the pages, so I can utilise every functionality.
+2. As a **user**, I want to be able to join BookSwap platform, so that I can access and utilise its features.
+3. As a **user**, I want to be able to log into BookSwap platform, so that I can access and utilise its features.
+4. As a **lender**, I want the ability to add new books to the BookSwap database if they are not already added, so I can add them to my listings.
+5. As a **lender**, I want to edit the details of the books I have added to the database on BookSwap so that I can rectify any mistakes or inaccuracies.
+6. As a **lender**, I want to create a book listing, so that I can share books I have available for borrowing.
+7. As a **lender**, I want to view all my books listed, making it easy for me to see and manage them.
+8. As a **lender**, I want the ability to edit the status of my listed books, so it will be clear to everyone when they are available.
+9. As a **lender**, I want to delete a listed book, so that I can remove books that are no longer available for borrowing.
+10. As a **borrower**, I want to be able to search for books by title that are available for borrowing, allowing me to find books that match my interests.
+11. As a **borrower**, I want a clear display of search results that shows all available copies of books from different lenders, so I can make a decision on which book to borrow.
+12. As a **borrower**, I want to view basic book information and the lender’s name and lender's email, so that I can contact them externally via email for borrowing requests.
+13. As a **user**, I want the ability to securely log out of the application, ensuring that my platform details remain protected and inaccessible to unauthorised individuals.
+14. As a **user** I would like to be able to navigate between the pages, so I can utilise every functionality.
 
 Building upon the MVP, we also discussed additional functionalities during our subsequent meetings, which are categorised as advanced features.
 
 ### Advanced features
 
-17. As a **lender**, I want  to provide additional information such as location and condition for my listed books, so it will be easier for borrowers to make more informed decisions.
-18. As a **borrower**, I want to search for books using various criteria (e.g., title, author, location), so that I can find books more accurately and efficiently.
-19. As a **borrower**, I want to request a book for borrowing through the app, so that I can easily communicate my interest in borrowing a specific book.
-20. As a **lender**, I want to see requested books in my listed books section, so that I can conveniently manage and respond to requests.
-21. As a **lender**, I want to accept or deny borrowing requests within the app, so that I can control the lending process and communicate my decision to borrowers.
-22. As a **lender**, I want to the system to automatically set the due date to 3 weeks from now and list the borrower’s name and email address on the card, so I can communicate with borrower externally via email for lending details, meeting arrangements, and other discussions.
-23. As a **borrower**, I want to list my borrowed books, so that I can track them.
-24. As a **borrower**, I want to view the status of my borrowing requests in my borrowed books list, so that I can know whether my request is accepted.
-25. As a **user**, I want the book status to be color-coded based on due dates, so that I can easily identify overdue books and those close to the due date.
-26. As a **lender**, I would like the ability to upload images of books from my computer, so that I can have more options where images are sourced.
-27. As a **lender**, I want the system to auto-fill the information of a book if that is added to the database previously, so the listing would be faster and more convenient.
+15. As a **lender**, I want  to provide additional information such as location and condition for my listed books, so it will be easier for borrowers to make more informed decisions.
+16. As a **borrower**, I want to search for books using various criteria (e.g., title, author, location), so that I can find books more accurately and efficiently.
+17. As a **borrower**, I want to request a book for borrowing through the app, so that I can easily communicate my interest in borrowing a specific book.
+18. As a **lender**, I want to see requested books in my listed books section, so that I can conveniently manage and respond to requests.
+19. As a **lender**, I want to accept or deny borrowing requests within the app, so that I can control the lending process and communicate my decision to borrowers.
+20. As a **lender**, I want to the system to automatically set the due date to 3 weeks from now and list the borrower’s name and email address on the card, so I can communicate with borrower externally via email for lending details, meeting arrangements, and other discussions.
+21. As a **borrower**, I want to list my borrowed books, so that I can track them.
+22. As a **borrower**, I want to view the status of my borrowing requests in my borrowed books list, so that I can know whether my request is accepted.
+23. As a **user**, I want the book status to be color-coded based on due dates, so that I can easily identify overdue books and those close to the due date.
+24. As a **lender**, I would like the ability to upload images of books from my computer, so that I can have more options where images are sourced.
+25. As a **lender**, I want the system to auto-fill the information of a book if that is added to the database previously, so the listing would be faster and more convenient.
 
 Additionally, we briefly discussed future nice-to-have plans, which are defined at a higher level compared to the MVP and advanced functionalities fit to the agile eco-system.
 
 ### Nice to haves (these user stories are defined on high level)
 
-28. As a **lender**, I want to provide more information about the book including condition, description, so the borrower can make an informed decision about borrowing and minimise disputes.
-29. As a **borrower**, I want to view detailed book information, including descriptions and book condition, so that I can make informed decisions about borrowing.
-30.	As a **user**, I want to manage my account settings, so that I can update my profile information, change my password, and modify my email or delete my account.
-31.	As a **lender**, I want the platform to integrate with an external API for book data, so that book details can be auto filled based on title or other identifiers, saving time when creating listings.
-32.	As a **user**, I want an internal messaging system between borrowers and lenders within the app, so that I can conveniently communicate and discuss lending details without relying on external email.
-33.	As a **borrower**, I want to rate and provide feedback on borrowed books, so that I can share my experience and help others make informed decisions.
-34.	As an **administrator**, I want to manage user accounts, moderate listings, moderate books, and have access to an admin dashboard, so that I can ensure the smooth operation of the platform and handle any necessary administrative tasks.
+26. As a **lender**, I want to provide more information about the book including condition, description, so the borrower can make an informed decision about borrowing and minimise disputes.
+27. As a **borrower**, I want to view detailed book information, including descriptions and book condition, so that I can make informed decisions about borrowing.
+28. As a **user**, I want to manage my account settings, so that I can update my profile information, change my password, and modify my email or delete my account.
+29. As a **lender**, I want the platform to integrate with an external API for book data, so that book details can be auto filled based on title or other identifiers, saving time when creating listings.
+30. As a **user**, I want an internal messaging system between borrowers and lenders within the app, so that I can conveniently communicate and discuss lending details without relying on external email.
+31. As a **borrower**, I want to rate and provide feedback on borrowed books, so that I can share my experience and help others make informed decisions.
+32. As an **administrator**, I want to manage user accounts, moderate listings, moderate books, and have access to an admin dashboard, so that I can ensure the smooth operation of the platform and handle any necessary administrative tasks.
 
 Following the definition of the user stories, we utilise Trello as a project management tool to create task cards for the MVP and advanced user stories and a collection to the nice to haves. By adopting this approach, we will be able to efficiently monitor and oversee the development process. As the project progresses, each user story will be further broken down into actionable steps. It is important to note that changes are a natural part of the process, and as such, the Trello Board will be continuously refined to accommodate any modifications.
 
