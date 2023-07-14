@@ -1,5 +1,7 @@
 # BookSwap - Share. Swap. Explore
 
+[BookSwap GitHub Repository](https://github.com/KrisztaT/bookswap
+)
 ## R1 - Description of the website
 
 **Purpose:**
@@ -153,7 +155,7 @@ Following the definition of the user stories, we utilise Trello as a project man
 
 ## R5 - Wireframes
 
-[WireFrames](https://www.figma.com/file/mGdliIbudJmbZTl0WUdvfE/bookSwap?type=design&node-id=0%3A1&mode=design&t=oiaLIOWpWt9wgLaB-1)
+[BookSwap wireframes](https://www.figma.com/file/mGdliIbudJmbZTl0WUdvfE/bookSwap?type=design&node-id=0%3A1&mode=design&t=oiaLIOWpWt9wgLaB-1)
 
 In collaboration with Jozsef, the wireframes were developed, incorporating the following overarching requirements obtained during our initial meeting:
 
@@ -214,7 +216,7 @@ As per our previous agreement with Jozsef, following the data flow diagram and w
 
 ## R6 - Trello Board
 
-[bookSwap Trello Board](https://trello.com/b/BfJSkwUq/bookswap)
+[BookSwap Trello Board](https://trello.com/b/BfJSkwUq/bookswap)
 
 Initial setup of the Trello Board for the documentation of the project.
 
@@ -239,3 +241,31 @@ As mentioned previously, the user stories underwent refinement during the creati
 
 ![Updated user stories 1](./docs/Trello_user_stories_update_2023-07-09.png)
 ![Updated user stories 2](./docs/Trello_user_stories_update_2_2023-07-09.png)
+
+Following that, the Trello Board was refreshed with the requirements specific to Assessment B.
+
+![Trello update Asessment B](./docs/Trello_update_2023-07-10.png)
+![Requirements example](./docs/Trello_example_requirement_2023-07-10%20082720.png)
+
+Difficulty levels were assigned to the technical stories and later to user stories and requirements to provide a clear definition of their complexity.
+
+![Technical user stories](./docs/Trello_setup_technical_stories_difficulties_2023-07-10%20090813.png)
+![Example technical sotry](./docs/Trello_example_backend_ts_2023-07-10.png)
+
+Subsequently, both the backend and frontend structures were established.
+
+![Backend, frontend foundational structures](./docs/Trello_development_1_2023-07-10.png)
+![EOD 2023-07-10](./docs/Trello_EOD_2023-07-10.png)
+
+The following day, I began working on the login and join functions. Initially, I created the backend, followed by incorporating the frontend elements such as the NavBar and buttons to initiate the authentication process. The progress of these tasks is represented by the displayed cards below.
+
+![Authentication](./docs/Trello_sod_2023-07-11.png)
+![Authentication 2](./docs/Trello_sod_2023-07-12.png)
+![User story 1](.\docs\Trello_us1_update_2023-07-12.png)
+![User story 1](.\docs\Trello_us1_update_eod_2023-07-12.png)
+![User story 2](.\docs\Trello_us2_update_2023-07-12.png)
+![User story 2](.\docs\Trello_us2_update_eod_2023-07-12.png)
+![User story 3](.\docs\Trello_us3_update_2023-07-12.png)
+![User story 3](.\docs\Trello_us3_update_eod_2023-07-12.png)
+
+The Trello Board will be utilised throughout the project and will be regularly updated on both the client and server repositories from now on.
