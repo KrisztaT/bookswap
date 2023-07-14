@@ -12,21 +12,21 @@ Please note that the inclusion of Konyvek.hu as part of the context is purely fi
 
 **Functionality/Features:**
 
-In collaboration with Jozsef, we have identified three tiers of functionality based on the applied agile methodology. These tiers define the progressive levels of features of the project. By dividing the these functionalities into tiers, we can prioritise and implement them incrementally, ensuring a focused and efficient development process. The customer expressed their satisfaction with the Minimal Value Product (MVP) scope and stated that any additional features implemented would be considered a bonus.
+In collaboration with Jozsef, we have identified three tiers of functionality based on the applied agile methodology. These tiers define the progressive levels of features of the project. By dividing the these functionalities into tiers, we can prioritise and implement them incrementally, ensuring a focused and efficient development process. The customer's requirement is to prioritize addressing the MVP tier, while considering any additional implemented functionalities in the Advanced or Nice to have tiers as valuable extras and part of the longer-term development scope.
 
 ### 1. Minimal Value Product
 
 - User Registration: Users can join and create an account to access the functionalities of the application.
 - User Login: Users can log in to access the functionalities of the application.
-- User Logout: Users can ensure the protection and privacy of their information and prevent unauthorised access.
+- User Logout: Users can log out to ensure the protection and privacy of their information and prevent unauthorised access.
 - Add and Edit Books: Lenders can add books to the database of BookSwap and edit their details.
-- Book Listing Management for Lenders: Lenders can create, list, update, and delete their book listings.
+- Book Listing Management for Lenders: Lenders can create, list, update their status, and delete their book listings.
 - Book Search for Borrowers: Borrowers can search for books based on the title and in the result list view basic book information and lender's name and email.
-- Borrowers can contact lenders externally via email for borrowing requests.
+- Borrowers can contact lenders externally via email for communicating about lending details.
 
 ### 2. Advanced functionalities
 
-- Additional Information for Listed Books: Lenders can provide additional details such as location and condition for their listed books
+- Additional Information for Listed Books: Lenders can provide additional details such as location and condition for their listed books.
 - Advanced Book Search: Borrowers can search for books using various search criteria.
 - Borrowing Requests: Borrowers can send borrowing requests through the app.
 - Requested Books in Lender's List: Lenders can conveniently view requested books within their listed books section
@@ -101,7 +101,7 @@ According to the current plan, the client application will be hosted on Netlify,
 
 ## R4 - User Stories
 
-For the BookSwap application project with my client Konyvek.hu, we have adopted Scrum methodology to ensure an iterative and collaborative development process. Jozsef has been working closely with me to define and prioritise user stories that align with the project's goals. In our initial discussions, we identified a set of high-level user stories with 3 different personas (lender, borrower and admin) that served as a starting point for our work. As part of our agreement, we decided to prioritise and define the list of functionalities by assigning numbers to establish the order. This approach allows for transparency and incremental development to be implemented effectively. In addition to user stories, I will also define technical stories on the Trello Board to address specific technical aspects of the project.
+For the BookSwap application project with my client Konyvek.hu, we have adopted Scrum methodology to ensure an iterative and collaborative development process. Jozsef has been working closely with me to define and prioritise user stories that align with the project's goals. In our initial discussions, we identified a set of high-level user stories with 3 different personas (lender, borrower (together user) and admin) that served as a starting point for our work. As part of our agreement, we decided to prioritise and define the list of functionalities by assigning numbers to establish the order. This approach allows for transparency and incremental development to be implemented effectively. In addition to user stories, I will also define technical stories on the Trello Board to address specific technical aspects of the project.
 To determine the scope of the Minimum Viable Product (MVP), we engaged in further discussions the following day to identify the user stories that are essential for the initial launch and would satisfy the customer's requirements. During these discussions, we finalised the user stories for the Minimal Viable Product (MVP). These user stories encompass functionalities designed to cater to both lenders and borrowers. It was also acknowledged that further changes could arise during the wireframing and flow diagramming process.
 
 ### Minimal Value Product
@@ -114,7 +114,7 @@ To determine the scope of the Minimum Viable Product (MVP), we engaged in furthe
 6. As a **lender**, I want to create a book listing, so that I can share books I have available for borrowing.
 7. As a **lender**, I want to view all my books listed, making it easy for me to see and manage them.
 8. As a **lender**, I want the ability to edit the status of my listed books, so it will be clear to everyone when they are available.
-9. As a **lender**, I want to delete a listed book, so that I can remove books that are no longer available for borrowing.
+9. As a **lender**, I want to delete a book from my listing, so that I can remove books that are no longer available for borrowing.
 10. As a **borrower**, I want to be able to search for books by title that are available for borrowing, allowing me to find books that match my interests.
 11. As a **borrower**, I want a clear display of search results that shows all available copies of books from different lenders, so I can make a decision on which book to borrow.
 12. As a **borrower**, I want to view basic book information and the lender’s name and lender's email, so that I can contact them externally via email for borrowing requests.
@@ -137,7 +137,7 @@ Building upon the MVP, we also discussed additional functionalities during our s
 24. As a **lender**, I would like the ability to upload images of books from my computer, so that I can have more options where images are sourced.
 25. As a **lender**, I want the system to auto-fill the information of a book if that is added to the database previously, so the listing would be faster and more convenient.
 
-Additionally, we briefly discussed future nice-to-have plans, which are defined at a higher level compared to the MVP and advanced functionalities fit to the agile eco-system.
+Additionally, we briefly discussed high-level details of future nice-to-have plans, which are compared to the MVP and advanced functionalities and are well-suited to the agile ecosystem.
 
 ### Nice to haves (these user stories are defined on high level)
 
@@ -157,7 +157,7 @@ Following the definition of the user stories, we utilise Trello as a project man
 
 In collaboration with Jozsef, the wireframes were developed, incorporating the following overarching requirements obtained during our initial meeting:
 
-1. High-fidelity wireframes to facilitate the client's visualisation of the final product.
+1. High-fidelity wireframes to facilitate the client's visualisation of the final product, with the acknowledgement that changes might occur. It's common for design discrepancies to arise when transitioning from a high fidelity wireframe to the coded application for reasons such as limitations in technology, responsiveness issues, or the wireframe does not always accurately represent the dynamic nature of the final product. Hence, wireframes are used as reference.
 2. The focus is on developing dedicated, targeted pages that cater to specific role based actions, like lending or borrowing, enabling users to complete all related tasks on a single page without the need to navigate through multiple different pages.
 3. Advanced features are incorporated and visually distinguished in the wireframes through the use of orange highlighting or an orange frame.
 4. Representation of various card states, including pending, accepted, overdue, and other relevant statuses, within the wireframe designs.
@@ -168,10 +168,12 @@ Below the mobile view frames showcases the high-level connections between the pa
 
 ![High level connections](./docs/wireframes/high_level_functions_and_page_connections.png)
 
+Note: The Figma version provides the visual representation of the high-level connections as well.
+
 ### Home Page
 
 The home page features a navigation bar that displays the site's logo, along with login and join buttons. Placing these buttons in the navigation bar ensures easy access, as the login process is essential for utilising the application. Furthermore, the home page also includes an image, an introduction, and a book section. These elements are for providing users with a clear understanding of the page's purpose and content.
-The spacing, font size, card dimensions, and form sizes, including the input fields, are appropriately adjusted for the desktop, tablet, and mobile views across all the pages. For easy contact with the company, the footer of every page includes social media icons.
+For easy contact with the company, the footer of every page includes social media icons.
 
 | Desktop | Tablet | Mobile |
 |---------|--------|--------|
@@ -191,7 +193,7 @@ The login and join process on the page is facilitated through the use of modals,
 
 ### Borrowing Page
 
-As per the client's request, when users log in or join, they are directed to the borrowing page as based on client's data it is highly likely that more users are borrowers than lenders. The display of the hamburger menu in the navigation bar is triggered after the login-join process, ensuring ease of navigation for users. Within the advanced scope of the application, the top section of the page features a concise display of the borrowed books list. Given the standardised borrowing period of 3 weeks, typically no more than 2-3 books are showcased here at the same time. This efficient presentation ensures that the borrowed books list does not occupy excessive space, hence the placement.
+As per the client's request, when users log in or join, they are directed to the borrowing page as based on client's data it is highly likely that more users are borrowers than lenders. After completing the login-join process, the navigation bar dynamically updates to display menu items and a logout icon, ensuring convenient user navigation. Within the advanced scope of the application, the top section of the page features a concise display of the borrowed books list. Given the standardised borrowing period of 3 weeks, typically no more than 2-3 books are showcased here at the same time. This efficient presentation ensures that the borrowed books list does not occupy excessive space, hence the placement.
 For the borrowing page, a card-based display is used, providing a user-friendly interface. Depending on the status of the borrowing process (pending, accepted, or overdue), the card dynamically presents different borrowing information to the borrower. This tailored approach enhances the clarity and relevance of the displayed information and keep everything in the same page as was requested.
 Below the borrowing section, a book search form is positioned, allowing users to search for and list available books. This search functionality enables users to quickly locate desired books from the collection. Moreover, within the advanced scope of the application, borrowers also have the capability to send borrow requests directly to the lenders.
 
