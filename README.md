@@ -170,7 +170,7 @@ Below the mobile view frames showcases the high-level connections between the pa
 
 ![High level connections](./docs/wireframes/high_level_functions_and_page_connections.png)
 
-Note: The Figma version provides the visual representation of the high-level connections as well.
+Note: Connections using prototyping are also defined in the Figma version.
 
 ### Home Page
 
