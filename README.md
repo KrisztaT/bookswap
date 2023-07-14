@@ -261,11 +261,11 @@ The following day, I began working on the login and join functions. Initially, I
 
 ![Authentication](./docs/Trello_sod_2023-07-11.png)
 ![Authentication 2](./docs/Trello_sod_2023-07-12.png)
-![User story 1](.\docs\Trello_us1_update_2023-07-12.png)
-![User story 1](.\docs\Trello_us1_update_eod_2023-07-12.png)
-![User story 2](.\docs\Trello_us2_update_2023-07-12.png)
-![User story 2](.\docs\Trello_us2_update_eod_2023-07-12.png)
-![User story 3](.\docs\Trello_us3_update_2023-07-12.png)
-![User story 3](.\docs\Trello_us3_update_eod_2023-07-12.png)
+![User story 1](./docs/Trello_us1_update_2023-07-12.png)
+![User story 1](./docs/Trello_us1_update_eod_2023-07-12.png)
+![User story 2](./docs/Trello_us2_update_2023-07-12.png)
+![User story 2](./docs/Trello_us2_update_eod_2023-07-12.png)
+![User story 3](./docs/Trello_us3_update_2023-07-12.png)
+![User story 3](./docs/Trello_us3_update_eod_2023-07-12.png)
 
 The Trello Board will be utilised throughout the project and will be regularly updated on both the client and server repositories from now on.
