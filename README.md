@@ -199,7 +199,7 @@ Below the borrowing section, a book search form is positioned, allowing users to
 
 | Desktop | Tablet | Mobile |
 |---------|--------|--------|
-|![Desktop borrowing](./docs/wireframes/Desktop_Borrowing.jpg)|  ![Tablet borrowing](./docs/wireframes/Tablet_Borrowing.jpg)    |  ![Mobile borrowing](./docs/wireframes/Mobile_Lending.jpg)      |
+|![Desktop borrowing](./docs/wireframes/Desktop_Borrowing.jpg)|  ![Tablet borrowing](./docs/wireframes/Tablet_Borrowing.jpg)    |  ![Mobile borrowing](./docs/wireframes/Mobile_Borrowing.jpg)      |
 
 ### Lending Page
 
