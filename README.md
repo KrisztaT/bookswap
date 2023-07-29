@@ -155,7 +155,8 @@ Following the definition of the user stories, we utilise Trello as a project man
 
 ## R5 - Wireframes
 
-[BookSwap wireframes](https://www.figma.com/file/mGdliIbudJmbZTl0WUdvfE/bookSwap?type=design&node-id=0%3A1&mode=design&t=oiaLIOWpWt9wgLaB-1)
+[BookSwap wireframes plan](https://www.figma.com/file/mGdliIbudJmbZTl0WUdvfE/bookSwap?type=design&node-id=0%3A1&mode=design&t=oiaLIOWpWt9wgLaB-1)  
+[BookSwap wireframes implemented](https://www.figma.com/file/7ZBxOuQQCnpehCSvLL0ZEa/bookSwap_finished?type=design&node-id=0-1&mode=design&t=dMBEuIfGqRTjpyEY-0)
 
 In collaboration with Jozsef, the wireframes were developed, incorporating the following overarching requirements obtained during our initial meeting:
 
@@ -213,6 +214,75 @@ The current card-based solution provides an intuitive and user-friendly interfac
 |![Desktop lending](./docs/wireframes/Desktop_Lending.jpg)|  ![Tablet lending](./docs/wireframes/Tablet_Lending.jpg)    |  ![Mobile lending](./docs/wireframes/Mobile_Lending.jpg)      |
 
 As per our previous agreement with Jozsef, following the data flow diagram and wireframing, user stories will be revised and updated as the next step.
+
+|  Implemented version - updates |
+|----------------|
+
+After reaching an agreement to implement an edit modal for book and listing details, high-level connections were promptly updated as follows.
+
+![High level connections implemented](./docs/high_level_functions_and_page_connections_implemented.png)
+
+Note: Connections using prototyping are also defined in the Figma version.
+
+### Home Page
+
+The homepage did not change.
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop home implemented](./docs/wireframes_implemented/Desktop-Home.png)|  ![Tablet home implemented](./docs/wireframes_implemented/Tablet-Home.png)      |  ![Mobile home implemented](./docs/wireframes_implemented/Mobile-Home.png)      |
+
+### Login and Join modal
+
+Login and Join modal stayed the same, only the placeholders' color changed.
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop login implemented](./docs/wireframes_implemented/Desktop_Login_modal.png)|  ![Tablet login implemented](./docs/wireframes_implemented/Tablet_Login_modal.png)      |  ![Mobile login implemented](./docs/wireframes_implemented/Mobile_Login_modal.png)      |
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop join implemented](./docs/wireframes_implemented/Desktop_Join_modal.png)|  ![Tablet join implemented](./docs/wireframes_implemented/Tablet_Join_modal.png)    |  ![Mobile join implemented](./docs/wireframes_implemented/Mobile_Join_modal.png)      |
+
+### Borrowing Page
+
+During the development process of the borrowing page, the customer requested a couple of changes.
+
+- The borrowing page's cards underwent a redesign, now containing more comprehensive information, all to enhance the convenience of borrowers.
+- Additionally, there was a need to present borrowed items in search results, enabling borrowers to determine if a book is currently unavailable but might become accessible at a later stage. This feature ensures that borrowers are aware of the book's existence in the system, making it easier for them to plan their borrowing accordingly. 
+- Depending on the status of the borrowing process (available or borrowed), the cards dynamically present different colors, allowing for easy visual identification.
+
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop borrowing implemented](./docs/wireframes_implemented/Desktop_Borrowing.png)|  ![Tablet borrowing implemented ](./docs/wireframes_implemented/Tablet_Borrowing.png)    |  ![Mobile borrowing implemented](./docs/wireframes_implemented/Mobile_Borrowing.png)      |
+
+### Lending Page
+
+During the development process of the lending page, the customer requested a couple of changes.
+
+- The first request was to modify the order of the card list and add a book-to-listing form.
+- To address the issue of cluttered cards in editing mode and better manage changes, it was decided to implement an edit book and listing data modal. Consequently, the cards underwent a redesign to ensure clarity and improved functionality.
+- In response to the customer's requirements, a new card was introduced to provide users with information on how to add a book to the listing. Upon clicking the button, users would be directed to the relevant section of the form. This feature was necessary as when many books are listed, the form can not be seen on the screen.
+- The application was designed to ask for minimal information about the book: title and author. If the book was already present in the database, the image, page count, and release year data will be automatically displayed on the updated card list. In case the book was not previously added, users have the option to modify the book details through the displayed card edit button and add additional information.
+- The customer emphasized the importance of the book's title and author as essential information. Additionally, unique listing details, such as location, condition, and availability of the book, were also made required. When a book is added, its availability status is automatically set to "available."
+- Users have the ability to delete a listing, but the application ensures that only the listing is deleted, not the book information itself.
+- To make the card system more intuitive, color-coding was implemented based on different states.
+- Furthermore, the system was designed to allow only the creator of the book to modify its details. For other users, only the "edit listing" button is available in the modal, and its content adjusts accordingly.
+
+Overall, these changes and features were implemented to enhance the user experience and make the lending page more user-friendly and efficient.
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop lending implemented](./docs/wireframes_implemented/Desktop_Lending.png)|  ![Tablet lending implemented](./docs/wireframes_implemented/Tablet_Lending.png)    |  ![Mobile lending implemented](./docs/wireframes_implemented/Mobile_Lending.png)      |
+
+### Edit Modal
+
+The Edit Modal was introduced to enable users to edit both book and listing details. As mentioned earlier, the modal dynamically displays different information depending on the user's rights. If the user has added the book to the database, they can modify the book data. Conversely, if the user has only added the book to the listing, they are allowed to change only the listing information.
+
+| Desktop | Tablet | Mobile |
+|---------|--------|--------|
+|![Desktop lending implemented](./docs/wireframes_implemented/Desktop_Edit.png)|  ![Tablet lending implemented](./docs/wireframes_implemented/Tablet_Edit.png)    |  ![Mobile lending implemented](./docs/wireframes_implemented/Mobile_Edit.png)      |
 
 ## R6 - Trello Board
 
