@@ -66,6 +66,54 @@ The target audience for BookSwap includes book enthusiasts and avid readers who 
 | DevOps Tools      | [GitHub Desktop](https://desktop.github.com/), [GitHub](https://github.com/), [VS Code](https://code.visualstudio.com/)     |
 | Design Tools      | [Figma](https://www.figma.com), [Logo](https://logo.com/), [Draw.io](https://app.diagrams.net/)                           |
 
+## R2-B - Libraries used in the project
+
+### Server Libraries
+
+`bcrypt (^5.1.0)`: Bcrypt is used for hashing passwords and it provides a secure way to hash and compare passwords, making it difficult for attackers to reverse-engineer the original passwords from the hashes.
+
+`cors (^2.8.5)`: CORS (Cross-Origin Resource Sharing) is a security feature that allows or restricts web resources (such as APIs) to be requested from different domains. The cors library helps in handling CORS headers and settings, making it easier to control and secure the communication between the app's frontend and backend. It's important to note that the application is configured to operate within the local context of "http://localhost:3000" in case of local run. For the application to function correctly from alternative hosts, configuration adjustments are required in both the backend and frontend.
+
+`dotenv (^16.3.1)`: Dotenv allows the load of environment variables from a .env file into the app's process environment. It is used to keep sensitive configuration details (like database URLs, API keys, etc.) separate from the codebase and safely stored.
+
+`express (^4.18.2)`: Express.js is a framework designed for Node.js that streamlines the development of powerful and scalable web applications and APIs. It offers a comprehensive set of tools for managing routes, handling requests and responses, implementing middleware, and other essential functionalities required for building this application.
+
+`express-validator (^7.0.1)`: The express-validator library is utilised to validate and sanitise incoming request data in applications. It plays a crucial role in mitigating common security vulnerabilities such as cross-site scripting (XSS) and SQL injection by sanitising user inputs. This library was used to validate data from frontend forms related to login, join, book, and listing functionalities.
+
+`helmet (^7.0.0)`: Helmet is a security middleware that enhances the security of an application by configuring various HTTP headers. These headers help guard against prevalent security threats, including Cross-Site Scripting (XSS) attacks, clickjacking, and others.
+
+`jsonwebtoken (^9.0.1)`: The jsonwebtoken library enables the generation and verification of JSON Web Tokens (JWTs), which serve as a secure and efficient method for exchanging claims between two parties. JWTs are commonly used in web applications to implement authentication and authorisation mechanisms.
+
+`mongoose (^7.3.2)`: Mongoose is a library that serves as an Object Data Modeling (ODM) tool for MongoDB and Node.js. It offers a schema-based interface for interacting with MongoDB databases, simplifying the process of defining models, querying data, and executing Create, Read, Update, and Delete (CRUD) operations.
+
+`Jest (^29.6.1)`: Jest is a testing framework for JavaScript applications and offers a set of testing tools, to help ensuring the quality and accuracy of the code.
+
+`Nodemon (^3.0.1)`: Nodemon is a utility tool used in development that watches for modifications in the source code and automatically restarts the server when changes are detected.
+
+`Supertest (^6.3.3)`: Supertest is a library for testing HTTP endpoints, it enables sending HTTP requests to apps's API routes and assert the responses, simplifying the process of writing automated tests for the API endpoints.
+
+### Client Libraries
+
+`bootstrap (^5.3.0)`: Bootstrap is a CSS framework that offers a collection of pre-designed and responsive UI components. It streamlines the process of designing visually appealing and consistent user interfaces for web applications.
+
+`framer-motion (^10.12.18)`: Framer Motion is a library for adding smooth and interactive animations to React components. It provides an intuitive API for creating animations and transitions, enhancing the visual appeal and user experience of the apps.
+
+`react (^18.2.0)`: React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the dynamic rendering of data.
+
+`react-bootstrap (^2.8.0)`: React Bootstrap is an adaptation of the Bootstrap framework for use with React applications. It provides a set of pre-styled components that are integrated with React's component architecture, enabling efficient UI development.
+
+`react-bootstrap-icons (^1.10.3)`: This library offers a collection of Bootstrap icons as individual React components. It allows easy integration of icons into React components and UI elements.
+
+`react-dom (^18.2.0)`: React DOM is a package that provides the methods and components necessary for rendering React applications in the browser. It facilitates the interaction between React components and the actual HTML DOM.
+
+`react-router-dom (^6.14.1)`: React Router DOM is a library for adding routing and navigation capabilities to React applications. It allows the creation of multi-page apps by defining routes and managing the rendering of different components based on the URL.
+
+`@testing-library/jest-dom (^5.16.5)`: The Jest DOM library extends the capabilities of Jest for asserting DOM-related expectations in tests.
+
+`@testing-library/react (^13.4.0)`: Testing Library for React is a testing framework that emphasises testing user interactions and behavior rather than implementation details. It provides utilities for simulating user actions and asserting the resulting state and rendered output of React components.
+
+`@testing-library/user-event (^13.5.0)`: This library complements Testing Library by simulating user interactions, such as clicks, typing, and focusing, in a way that closely resembles how a real user interacts with a web application.
+
 ## R2 - Dataflow Diagram
 
 The data flow diagram incorporates the following aspects as agreed upon with Jozsef:
