@@ -13,6 +13,89 @@
 
 Note: To facilitate easier identification throughout the documentation, updates,changes and tasks specific to Part B of the project are marked with the 'B' identifier.
 
+## B - Installation Guide
+
+Follow the steps outlined below to perform a local installation of both the server and client components on your computer.
+
+### System Requirements
+
+- NodeJS version v19.8.1
+
+### Server Installation
+
+1. Create a directory named `bookswap` and navigate into it:
+   ```bash
+   $ mkdir bookswap && cd bookswap
+   ```
+2. Clone the server repository from GitHub or unzip the provided file.
+    ```bash
+    $ git clone git@github.com:KrisztaT/bookswap-server.git
+    or
+    $ unzip KrisztinaTesenyi_T3A2-B.zip
+   ```
+3. Go to the server folder. (In case file was provided use the second line.)
+   ```bash
+   $ cd bookwap-server
+   or
+   $ cd KrisztinaTesenyi_T3A2-B.zip/src/bookswap-server
+   ```
+4. Install the required npm packages:
+   ```bash
+   $ npm install
+   ```
+5. Create your `.env` file, if it was not provided, with appropriate DATABASE_URL(s) and JWT_SECRET values.
+6. You can seed your local database using the following command:
+    ```bash
+   $ npm run seed-dev
+   ```
+7. Launch the server using the following command:
+   ```bash
+   $ npm run dev
+   ```
+   You now have access to the API through Postman or by navigating to localhost:3001/ in your web browser. In case a different port is used, please adjust the frontend settings to ensure communication between frontend and backend.
+
+8. To run tests, first make sure that DATABASE_URL_TEST is defined in your `.env` file. Then to seed the test database use the command:
+   ```bash
+   $ npm run seed-test
+   ```
+9. After seeding the test database, you can execute tests as well and view the results along with test coverage using:
+   ```bash
+   $ npm run test-cc
+   ```
+
+## Client Installation
+
+1. Open your terminal and navigate to the `bookswap` folder:
+   ```bash
+   $ cd bookswap
+   ```
+2. Clone the client repository from GitHub:
+   ```bash
+   $ git clone git@github.com:KrisztaT/bookswap-client.git
+   ```
+3. Go to the client folder. (In case file was provided use the second line.)
+   ```bash
+   $ cd bookswap-client
+   or
+   $ cd KrisztinaTesenyi_T3A2-B.zip/src/bookswap-client
+   ```
+4. Install the required npm packages:
+   ```bash
+   $ npm install
+   ```
+5. Create your `.env` file, if it was not provided, with appropriate BACKEND
+_URL(s).
+6. Start the client server with the following command:
+   ```bash
+   $ npm start
+    ```
+      The client server will automatically run on http://localhost:3000/ by default, and this URL is configured in the CORS settings. Therefore, if a different port is used, both the backend and frontend components will require modification to ensure the communication between them.
+
+6. To run tests use the command:
+   ```bash
+   $ npm test
+   ```
+
 ## R1 - Description of the website
 
 **Purpose:**
@@ -104,7 +187,7 @@ As the implementation progressed using scrum, the descriptions naturally evolved
 
 `bcrypt (^5.1.0)`: Bcrypt is used for hashing passwords and it provides a secure way to hash and compare passwords, making it difficult for attackers to reverse-engineer the original passwords from the hashes.
 
-`cors (^2.8.5)`: CORS (Cross-Origin Resource Sharing) is a security feature that allows or restricts web resources (such as APIs) to be requested from different domains. The cors library helps in handling CORS headers and settings, making it easier to control and secure the communication between the app's frontend and backend. It's important to note that the application is configured to operate within the local context of "http://localhost:3000" in case of local run. For the application to function correctly from alternative hosts, configuration adjustments are required in both the backend and frontend.
+`cors (^2.8.5)`: CORS (Cross-Origin Resource Sharing) is a security feature that allows or restricts web resources (such as APIs) to be requested from different domains. The cors library helps in handling CORS headers and settings, making it easier to control and secure the communication between the app's frontend and backend. It's important to note that the application is configured to operate within the local context of "http://localhost:3000" in case of local run. For the application to function correctly from alternative hosts, configuration adjustments are required in the backend.
 
 `dotenv (^16.3.1)`: Dotenv allows the load of environment variables from a .env file into the app's process environment. It is used to keep sensitive configuration details (like database URLs, API keys, etc.) separate from the codebase and safely stored.
 
@@ -270,7 +353,9 @@ Implemented user stories are available for reference on the Trello board.
 
 Jozsef was acting as the Product Owner during the project. This meant he took care of tasks related to defining and prioritising the work. We considered the possibility of having one person handle both the Product Owner and Scrum Master roles and while it is not the best practice we went with that solution for the project. In my role as the developer, I formed the project team.
 
-At the project's outset, user stories were gathered by speaking with Jozsef, who then organised and ranked these stories in a list. Our collaboration came into play during our planning meetings, where we jointly decided which tasks to tackle in each sprint. After completing tasks, I received feedback during review sessions, which allowed me to make necessary changes and fixes based on the input received.
+At the project's start, user stories were gathered by speaking with Jozsef, who then organised and ranked these stories in a list. Our collaboration came into play during our planning meetings, where we jointly decided which tasks to tackle in each sprint.
+
+After completing tasks, I received feedback during review sessions, which allowed me to make necessary changes and fixes based on the input received.
 
 We held short daily meetings to discuss my ongoing work progress, with Jozsef using Trello to monitor how things were advancing. The utilisation of Scrum principles is evident throughout this planning document as well, including the way we structured different levels of user stories, changes made during implementation, how trello was structured and used among others.
 
@@ -340,7 +425,7 @@ As per our previous agreement with Jozsef, following the data flow diagram and w
 
 ## B - Wireframes updates
 
-After reaching an agreement to implement an edit modal for book and listing details, high-level connections were promptly updated as follows.
+After reaching an agreement to implement an edit modal for book and listing details, high-level connections were updated as follows.
 
 ![High level connections implemented](./docs/high_level_functions_and_page_connections_implemented.png)
 
