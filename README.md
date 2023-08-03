@@ -11,6 +11,8 @@
 
 [BookSwap Deployed Server](https://bookswap-server-kt-2962369e5914.herokuapp.com/)
 
+Note: To facilitate easier identification throughout the documentation, updates,changes and tasks specific to Part B of the project are marked with the 'B' identifier.
+
 ## R1 - Description of the website
 
 **Purpose:**
@@ -75,16 +77,16 @@ The target audience for BookSwap includes book enthusiasts and avid readers who 
 | DevOps Tools      | [GitHub Desktop](https://desktop.github.com/), [GitHub](https://github.com/), [VS Code](https://code.visualstudio.com/)     |
 | Design Tools      | [Figma](https://www.figma.com), [Logo](https://logo.com/), [Draw.io](https://app.diagrams.net/)                           |
 
-## R1-B - Implemented functionalities
+## B - Implemented functionalities update
 
-As the implementation progressed using scrum, the scope naturally evolved, leading to minor adjustments in order to accurately describe the functionalities.
+As the implementation progressed using scrum, the descriptions naturally evolved, leading to minor adjustments in order to accurately describe the functionalities.
 
 ### 1. Minimal Value Product
 
 - User Registration: Users can join and create an account to access the functionalities of the application.
 - User Login: Users can log in to access the functionalities of the application.
 - User Logout: Users can log out to ensure the protection and privacy of their information and prevent unauthorised access.
-- Add and Edit Books: Lenders can add books to the database of BookSwap and have the option to edit the details of the books they have contributed to the database.
+- **Add and Edit Books: Lenders can add books to the database of BookSwap and have the option to edit the details of the books they have contributed to the database.**
 - Book Listing Management for Lenders: Lenders can create, list, update their status, and delete their book listings.
 - Book Search for Borrowers: Borrowers can search for books based on the title and in the result list view basic book information and lender's name and email.
 - Borrowers can contact lenders externally via email for communicating about lending details.
@@ -92,11 +94,11 @@ As the implementation progressed using scrum, the scope naturally evolved, leadi
 ### 2. Advanced functionalities
 
 - Additional Information for Listed Books: Lenders can provide additional details such as location and condition for their listed books.
-- Enhance Additional Information: Lenders can update the extra provided data as needed.
+- **Enhance Additional Information: Lenders can update the extra provided data as needed.**
 - Advanced Book Search: Borrowers can search for books using various search criteria.
-- Search result is updated with to display the additional data.
+- **Search result is updated with to display the additional data.**
 
-## R2-B - Libraries used in the project
+## B - Libraries used in the project
 
 ### Server Libraries
 
@@ -158,6 +160,16 @@ The inclusion of these elements enhances the clarity and comprehensiveness of th
 ![auth](./docs/authentication_dfd.drawio.png)
 ![lending](./docs/lending.drawio.png)
 ![borrowing](./docs/borrowing_dfd.drawio.png)
+
+## B - Dataflow Diagram update
+
+As the implementation progressed, it became evident that the book and listing data are inherently connected, given that a listing cannot exist without an associated book. Despite this interdependence, the need for distinct schemas-models arose to address scenarios where a single book representation could be listed by multiple lenders, each with unique lending information.
+
+Initially, an attempt was made to manage these elements separately; however, this approach introduced unnecessary complexities on both the front and backend. Consequently, a decision was reached to separate the book and listing data within the database while continuing to manage them together on both frontend and backend platforms.
+
+As a result, modifications were made to the lending data flow diagram that is  presented below.
+
+![lending updates](./docs/lending_updated.drawio.png)
 
 ## R3 - Application Architecture Diagram
 
