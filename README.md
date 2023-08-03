@@ -452,4 +452,69 @@ The following day, I began working on the login and join functions. Initially, I
 ![User story 3](./docs/Trello_us3_update_2023-07-12.png)
 ![User story 3](./docs/Trello_us3_update_eod_2023-07-12.png)
 
-The Trello Board will be utilised throughout the project and will be regularly updated on both the client and server repositories from now on.
+## B - Trello Board Updates
+
+Trello was continued to us as task delegation with tickets assigned to me labelled with difficulty level and corresponding Git commits, so Jozsef was able to track the project progress and visually see what I was talking about during out daily standups.
+
+The application was deployed early to resolve issues as soon as possible regarding the deployment.
+![Deployment](./docs/trello_part_b/Trello_deployment_%202023-07-17.png)
+
+Following the deployment, I concluded the Home page implementation.
+![HomePage](./docs/trello_part_b/Trello_HomePage_2023-07-17.png)
+![23.07.17 EOD](./docs/trello_part_b/Trello_EOD_2023-07-17.png)
+
+For the next sprint these user stories were setup and their progress tracked as can be seen below.
+
+![Sprint plan](./docs/trello_part_b/Trello_sod_setup_for_the_week_2023-07-18%20123901.png)
+![us4](./docs/trello_part_b/Trello_us4_eod_2023-07-18%20124911.png)
+![us4 done](./docs/trello_part_b/Trello_us4_done_2023-07-19.png)
+![us5 done](./docs/trello_part_b/Trello_us5_done_%202023-07-25%20165747.png)
+![us6](./docs/trello_part_b/Trello_us6_setup_2023-07-20.png)
+![us6 done](./docs/trello_part_b/Trello_us6_done_eod_2023-07-20.png)
+![Trello_us7_setup_2023-07-21](./docs/trello_part_b/Trello_us7_setup_2023-07-21.png)
+![Trello_us7_done_eod_2023-07-21](./docs/trello_part_b/Trello_us7_done_eod_2023-07-21.png)
+
+The subsequent sprint setup was designed to accommodate a higher task volume within the week, leveraging the foundational work laid out in the preceding user stories. These tasks were tracked as follows.
+![Trello_sod_ 2023-07-24](./docs/trello_part_b/Trello_sod_%202023-07-24.png)
+![Trello_us8_done_GH_2023-07-25](./docs/trello_part_b/Trello_us8_done_GH_2023-07-25.png)
+![Trello_us8_done_ 2023-07-25 165747](./docs/trello_part_b/Trello_us8_done_%202023-07-25%20165747.png)
+![Trello_us9_done_GH_2023-07-25](./docs/trello_part_b/Trello_us9_done_GH_2023-07-25.png)
+![Trello_us9_done_2023-07-25](./docs/trello_part_b/Trello_us9_done_2023-07-25.png)
+![Trello_EOD_2023-07-25](./docs/trello_part_b/Trello_EOD_2023-07-25.png)
+![Trello_us10_2023-07-26](./docs/trello_part_b/Trello_%20us10_2023-07-26.png)
+![Trello_us11_2023-07-26](./docs/trello_part_b/Trello_us11_2023-07-26.png)
+![Trello_us11_done_2023-07-26](./docs/trello_part_b/Trello_us11_done_2023-07-26.png)
+![Trello_us12_2023-07-26](./docs/trello_part_b/Trello_us12_2023-07-26.png)
+![Trello_us12_done_2023-07-26](./docs/trello_part_b/Trello_us12_done_2023-07-26.png)
+![Trello_us13_2023-07-26](./docs/trello_part_b/Trello_us13_2023-07-26.png)
+![Trello_us13_done_2023-07-26](./docs/trello_part_b/Trello_us13_done_2023-07-26.png)
+![Trello_us14_2023-07-26](./docs/trello_part_b/Trello_us14_2023-07-26.png)
+![Trello_us14_done_2023-07-26](./docs/trello_part_b/Trello_us14_done_2023-07-26.png)
+![Trello_eod_2023-07-26](./docs/trello_part_b/Trello_eod_2023-07-26.png)
+![Trello_us10_done_ 2023-07-26](./docs/trello_part_b/Trello_%20us10_2023-07-26.png)
+
+As per the agreed upon strategy post-MVP development, supplementary advanced tasks were incorporated into the development pipeline. Capitalising on new insights, two user stories were introduced to elevate the overall user experience. These user stories were evolved as can be seen below.
+![Trello_us15_a_2023-07-27](./docs/trello_part_b/Trello_us15_a_2023-07-27.png)
+![Trello_us15_b_2023-07-27](./docs/trello_part_b/Trello_us15_b_2023-07-27.png)
+![Trello_us16_a_2023-07-27](./docs/trello_part_b/Trello_us16_a_2023-07-27.png)
+![Trello_us16_b_2023-07-27](./docs/trello_part_b/Trello_us16_b_2023-07-27.png)
+![Trello_us16_b_done_2023-07-27](./docs/trello_part_b/Trello_us16_b_done_2023-07-27.png)
+![Trello_us15_a_done_hg_2023-07-27](./docs/trello_part_b/Trello_us15_a_done_hg_2023-07-27.png)
+![Trello_us15_a_done_task_2023-07-27](./docs/trello_part_b/Trello_us15_a_done_task_2023-07-27.png)
+![Trello_us15_b_done_2023-07-27](./docs/trello_part_b/Trello_us15_b_done_2023-07-27.png)
+![Trello_us16_a_done_2023-07-27](./docs/trello_part_b/Trello_us16_a_done_2023-07-27.png)
+
+During the concluding sprint, the focus shifted towards backend refactoring, encompassing database seeding and comprehensive testing. Additionally, accepted change requests were developed, and subsequent fixes resulting from the test outcomes were addressed.
+
+![Trello_CRs_Fixes_seed_refactor_ 2023-07-31](./docs/trello_part_b/Trello_CRs_Fixes_seed_refactor_%202023-07-31.png)
+![Trello_data_seed_2023-07-31](./docs/trello_part_b/Trello_data_seed_2023-07-31.png)
+![Trello_backend_refactor2023-07-31](./docs/trello_part_b/Trello_backend_refactor2023-07-31.png)
+![Trello_EOD_ 2023-07-31](./docs/trello_part_b/Trello_EOD_%202023-07-31.png)
+![Trello_automata_tests_2023-08-01](./docs/trello_part_b/Trello_automata_tests_2023-08-01.png)
+![Trello_automata_tests_done_2023-08-01](./docs/trello_part_b/Trello_automata_tests_done_2023-08-01.png)
+![Trello_automata_tests_done_gh_2023-08-01](./docs/trello_part_b/Trello_automata_tests_done_gh_2023-08-01.png)
+![Trello_EOD_tests_2023-08-01](./docs/trello_part_b/Trello_EOD_tests_2023-08-01.png)
+![Trello_fixes_following_test_ 2023-08-02](./docs/trello_part_b/Trello_fixes_following_test_%202023-08-02.png)
+![Trello_fixes_done_gh_2023-08-02](./docs/trello_part_b/Trello_fixes_done_gh_2023-08-02.png)
+![Trello_dev_test_done_2023-08-02](./docs/trello_part_b/Trello_dev_test_done_2023-08-02.png)
+![Trello_prod_test2023-08-02](./docs/trello_part_b/Trello_prod_test2023-08-02.png)
