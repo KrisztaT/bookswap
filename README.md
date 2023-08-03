@@ -1,7 +1,16 @@
 # BookSwap - Share. Swap. Explore
 
-[BookSwap GitHub Repository](https://github.com/KrisztaT/bookswap
+[BookSwap Project Documentation Repository](https://github.com/KrisztaT/bookswap
 )
+
+[BookSwap Client Repository](https://github.com/KrisztaT/bookswap-client)
+
+[BookSwap Server Repository](https://github.com/KrisztaT/bookswap-server)
+
+[BookSwap Deployed Client](https://bookswap-client.netlify.app/)
+
+[BookSwap Deployed Server](https://bookswap-server-kt-2962369e5914.herokuapp.com/)
+
 ## R1 - Description of the website
 
 **Purpose:**
