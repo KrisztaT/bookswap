@@ -77,7 +77,7 @@ The target audience for BookSwap includes book enthusiasts and avid readers who 
 | DevOps Tools      | [GitHub Desktop](https://desktop.github.com/), [GitHub](https://github.com/), [VS Code](https://code.visualstudio.com/)     |
 | Design Tools      | [Figma](https://www.figma.com), [Logo](https://logo.com/), [Draw.io](https://app.diagrams.net/)                           |
 
-## B - Implemented functionalities update
+## B - Implemented functionalities updates
 
 As the implementation progressed using scrum, the descriptions naturally evolved, leading to minor adjustments in order to accurately describe the functionalities.
 
@@ -243,6 +243,29 @@ Additionally, we briefly discussed high-level details of future nice-to-have pla
 
 Following the definition of the user stories, we utilise Trello as a project management tool to create task cards for the MVP and advanced user stories and a collection to the nice to haves. By adopting this approach, we will be able to efficiently monitor and oversee the development process. As the project progresses, each user story will be further broken down into actionable steps. It is important to note that changes are a natural part of the process, and as such, the Trello Board will be continuously refined to accommodate any modifications.
 
+## B - User stories updates
+
+Throughout the implementation process, user stories organically evolved in response to the emerging information and insights. As a result, the following modifications were  accepted and integrated into the application.
+
+10. As a **borrower**, I want to be able to search for books by title that are available for borrowing, allowing me to find books that match my interests.
+
+- Updated from available to all to account for scenarios in which a single listed book could potentially be borrowable in the future, even if it's not immediately accessible. This adjustment ensures that users are aware of the book's presence within the application, even when it's currently borrowed.
+    - As a **borrower**, I want to be able to search for books by title to borrow, allowing me to find books that match my interests.
+
+As a result of incorporating additional details into the listings, it became necessary to introduce two new user stories:
+
+15.b. As a **lender**, I want to edit the additional information such as location and condition for my listed books, so I can provide up-to-date extended information to borrowers.  
+16.b As a **borrower**, I want to see extended information about the listed books (e.g., location, condition), so that I can find books more accurately and efficiently.
+
+Furthermore, two change requests were successfully executed:
+
+- The addition of a book to the listing now **only mandates the inclusion of the title, author, location and condition.** (CR1.) Beforehand the image Url, page and release year were also mandatory.
+    - The application operates as follows: When a user submits the Add Book to Swap Listing form, they input the book's information (where title and author are required only) along with listing particulars. If the database identifies a book with matching title and author, connected data is presented on the cards. However, if the book is new to the database, lenders can later add the details on the listed cards by editing other information (image url, page, release year).
+
+- Change the order of AddBook and LenderListing, incorporating a card at the forefront of LenderListing that **describe guidance on adding a book**, along with a direct link to the section. This was initiated with CR2., which was subsequently reverted in CR3., leading to the implementation of the CR4. solution. CR4. allows users to navigate to the add book form for easy access.
+
+Implemented user stories are available for reference on the Trello board.
+
 ## R5 - Wireframes
 
 [BookSwap wireframes plan](https://www.figma.com/file/mGdliIbudJmbZTl0WUdvfE/bookSwap?type=design&node-id=0%3A1&mode=design&t=oiaLIOWpWt9wgLaB-1)  
@@ -267,6 +290,8 @@ Note: Connections using prototyping are also defined in the Figma version.
 
 The home page features a navigation bar that displays the site's logo, along with login and join buttons. Placing these buttons in the navigation bar ensures easy access, as the login process is essential for utilising the application. Furthermore, the home page also includes an image, an introduction, and a book section. These elements are for providing users with a clear understanding of the page's purpose and content.
 For easy contact with the company, the footer of every page includes social media icons.
+
+- Note: the social media icons in the footer are only for display, they are not functional
 
 | Desktop | Tablet | Mobile |
 |---------|--------|--------|
@@ -305,8 +330,7 @@ The current card-based solution provides an intuitive and user-friendly interfac
 
 As per our previous agreement with Jozsef, following the data flow diagram and wireframing, user stories will be revised and updated as the next step.
 
-|  Implemented version - updates |
-|----------------|
+## B - Wireframes updates
 
 After reaching an agreement to implement an edit modal for book and listing details, high-level connections were promptly updated as follows.
 
