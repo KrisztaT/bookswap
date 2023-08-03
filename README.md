@@ -1,7 +1,18 @@
 # BookSwap - Share. Swap. Explore
 
-[BookSwap GitHub Repository](https://github.com/KrisztaT/bookswap
+[BookSwap Project Documentation Repository](https://github.com/KrisztaT/bookswap
 )
+
+[BookSwap Client Repository](https://github.com/KrisztaT/bookswap-client)
+
+[BookSwap Server Repository](https://github.com/KrisztaT/bookswap-server)
+
+[BookSwap Deployed Client](https://bookswap-client.netlify.app/)
+
+[BookSwap Deployed Server](https://bookswap-server-kt-2962369e5914.herokuapp.com/)
+
+Note: To facilitate easier identification throughout the documentation, updates,changes and tasks specific to Part B of the project are marked with the 'B' identifier.
+
 ## R1 - Description of the website
 
 **Purpose:**
@@ -66,6 +77,75 @@ The target audience for BookSwap includes book enthusiasts and avid readers who 
 | DevOps Tools      | [GitHub Desktop](https://desktop.github.com/), [GitHub](https://github.com/), [VS Code](https://code.visualstudio.com/)     |
 | Design Tools      | [Figma](https://www.figma.com), [Logo](https://logo.com/), [Draw.io](https://app.diagrams.net/)                           |
 
+## B - Implemented functionalities updates
+
+As the implementation progressed using scrum, the descriptions naturally evolved, leading to minor adjustments in order to accurately describe the functionalities.
+
+### 1. Minimal Value Product
+
+- User Registration: Users can join and create an account to access the functionalities of the application.
+- User Login: Users can log in to access the functionalities of the application.
+- User Logout: Users can log out to ensure the protection and privacy of their information and prevent unauthorised access.
+- **Add and Edit Books: Lenders can add books to the database of BookSwap and have the option to edit the details of the books they have contributed to the database.**
+- Book Listing Management for Lenders: Lenders can create, list, update their status, and delete their book listings.
+- Book Search for Borrowers: Borrowers can search for books based on the title and in the result list view basic book information and lender's name and email.
+- Borrowers can contact lenders externally via email for communicating about lending details.
+
+### 2. Advanced functionalities
+
+- Additional Information for Listed Books: Lenders can provide additional details such as location and condition for their listed books.
+- **Enhance Additional Information: Lenders can update the extra provided data as needed.**
+- Advanced Book Search: Borrowers can search for books using various search criteria.
+- **Search result is updated with to display the additional data.**
+
+## B - Libraries used in the project
+
+### Server Libraries
+
+`bcrypt (^5.1.0)`: Bcrypt is used for hashing passwords and it provides a secure way to hash and compare passwords, making it difficult for attackers to reverse-engineer the original passwords from the hashes.
+
+`cors (^2.8.5)`: CORS (Cross-Origin Resource Sharing) is a security feature that allows or restricts web resources (such as APIs) to be requested from different domains. The cors library helps in handling CORS headers and settings, making it easier to control and secure the communication between the app's frontend and backend. It's important to note that the application is configured to operate within the local context of "http://localhost:3000" in case of local run. For the application to function correctly from alternative hosts, configuration adjustments are required in both the backend and frontend.
+
+`dotenv (^16.3.1)`: Dotenv allows the load of environment variables from a .env file into the app's process environment. It is used to keep sensitive configuration details (like database URLs, API keys, etc.) separate from the codebase and safely stored.
+
+`express (^4.18.2)`: Express.js is a framework designed for Node.js that streamlines the development of powerful and scalable web applications and APIs. It offers a comprehensive set of tools for managing routes, handling requests and responses, implementing middleware, and other essential functionalities required for building this application.
+
+`express-validator (^7.0.1)`: The express-validator library is utilised to validate and sanitise incoming request data in applications. It plays a crucial role in mitigating common security vulnerabilities such as cross-site scripting (XSS) and SQL injection by sanitising user inputs. This library was used to validate data from frontend forms related to login, join, book, and listing functionalities.
+
+`helmet (^7.0.0)`: Helmet is a security middleware that enhances the security of an application by configuring various HTTP headers. These headers help guard against prevalent security threats, including Cross-Site Scripting (XSS) attacks, clickjacking, and others.
+
+`jsonwebtoken (^9.0.1)`: The jsonwebtoken library enables the generation and verification of JSON Web Tokens (JWTs), which serve as a secure and efficient method for exchanging claims between two parties. JWTs are commonly used in web applications to implement authentication and authorisation mechanisms.
+
+`mongoose (^7.3.2)`: Mongoose is a library that serves as an Object Data Modeling (ODM) tool for MongoDB and Node.js. It offers a schema-based interface for interacting with MongoDB databases, simplifying the process of defining models, querying data, and executing Create, Read, Update, and Delete (CRUD) operations.
+
+`Jest (^29.6.1)`: Jest is a testing framework for JavaScript applications and offers a set of testing tools, to help ensuring the quality and accuracy of the code.
+
+`Nodemon (^3.0.1)`: Nodemon is a utility tool used in development that watches for modifications in the source code and automatically restarts the server when changes are detected.
+
+`Supertest (^6.3.3)`: Supertest is a library for testing HTTP endpoints, it enables sending HTTP requests to apps's API routes and assert the responses, simplifying the process of writing automated tests for the API endpoints.
+
+### Client Libraries
+
+`bootstrap (^5.3.0)`: Bootstrap is a CSS framework that offers a collection of pre-designed and responsive UI components. It streamlines the process of designing visually appealing and consistent user interfaces for web applications.
+
+`framer-motion (^10.12.18)`: Framer Motion is a library for adding smooth and interactive animations to React components. It provides an intuitive API for creating animations and transitions, enhancing the visual appeal and user experience of the apps.
+
+`react (^18.2.0)`: React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the dynamic rendering of data.
+
+`react-bootstrap (^2.8.0)`: React Bootstrap is an adaptation of the Bootstrap framework for use with React applications. It provides a set of pre-styled components that are integrated with React's component architecture, enabling efficient UI development.
+
+`react-bootstrap-icons (^1.10.3)`: This library offers a collection of Bootstrap icons as individual React components. It allows easy integration of icons into React components and UI elements.
+
+`react-dom (^18.2.0)`: React DOM is a package that provides the methods and components necessary for rendering React applications in the browser. It facilitates the interaction between React components and the actual HTML DOM.
+
+`react-router-dom (^6.14.1)`: React Router DOM is a library for adding routing and navigation capabilities to React applications. It allows the creation of multi-page apps by defining routes and managing the rendering of different components based on the URL.
+
+`@testing-library/jest-dom (^5.16.5)`: The Jest DOM library extends the capabilities of Jest for asserting DOM-related expectations in tests.
+
+`@testing-library/react (^13.4.0)`: Testing Library for React is a testing framework that emphasises testing user interactions and behavior rather than implementation details. It provides utilities for simulating user actions and asserting the resulting state and rendered output of React components.
+
+`@testing-library/user-event (^13.5.0)`: This library complements Testing Library by simulating user interactions, such as clicks, typing, and focusing, in a way that closely resembles how a real user interacts with a web application.
+
 ## R2 - Dataflow Diagram
 
 The data flow diagram incorporates the following aspects as agreed upon with Jozsef:
@@ -80,6 +160,16 @@ The inclusion of these elements enhances the clarity and comprehensiveness of th
 ![auth](./docs/authentication_dfd.drawio.png)
 ![lending](./docs/lending.drawio.png)
 ![borrowing](./docs/borrowing_dfd.drawio.png)
+
+## B - Dataflow Diagram update
+
+As the implementation progressed, it became evident that the book and listing data are inherently connected, given that a listing cannot exist without an associated book. Despite this interdependence, the need for distinct schemas-models arose to address scenarios where a single book representation could be listed by multiple lenders, each with unique lending information.
+
+Initially, an attempt was made to manage these elements separately; however, this approach introduced unnecessary complexities on both the front and backend. Consequently, a decision was reached to separate the book and listing data within the database while continuing to manage them together on both frontend and backend platforms.
+
+As a result, modifications were made to the lending data flow diagram that is  presented below.
+
+![lending updates](./docs/lending_updated.drawio.png)
 
 ## R3 - Application Architecture Diagram
 
@@ -153,6 +243,37 @@ Additionally, we briefly discussed high-level details of future nice-to-have pla
 
 Following the definition of the user stories, we utilise Trello as a project management tool to create task cards for the MVP and advanced user stories and a collection to the nice to haves. By adopting this approach, we will be able to efficiently monitor and oversee the development process. As the project progresses, each user story will be further broken down into actionable steps. It is important to note that changes are a natural part of the process, and as such, the Trello Board will be continuously refined to accommodate any modifications.
 
+## B - User stories updates
+
+Throughout the implementation process, user stories organically evolved in response to the emerging information and insights. As a result, the following modifications were  accepted and integrated into the application.
+
+10. As a **borrower**, I want to be able to search for books by title that are available for borrowing, allowing me to find books that match my interests.
+
+- Updated from available to all to account for scenarios in which a single listed book could potentially be borrowable in the future, even if it's not immediately accessible. This adjustment ensures that users are aware of the book's presence within the application, even when it's currently borrowed.
+    - As a **borrower**, I want to be able to search for books by title to borrow, allowing me to find books that match my interests.
+
+As a result of incorporating additional details into the listings, it became necessary to introduce two new user stories:
+
+15.b. As a **lender**, I want to edit the additional information such as location and condition for my listed books, so I can provide up-to-date extended information to borrowers.  
+16.b As a **borrower**, I want to see extended information about the listed books (e.g., location, condition), so that I can find books more accurately and efficiently.
+
+Furthermore, two change requests were successfully executed:
+
+- The addition of a book to the listing now **only mandates the inclusion of the title, author, location and condition.** (CR1.) Beforehand the image Url, page and release year were also mandatory.
+    - The application operates as follows: When a user submits the Add Book to Swap Listing form, they input the book's information (where title and author are required only) along with listing particulars. If the database identifies a book with matching title and author, connected data is presented on the cards. However, if the book is new to the database, lenders can later add the details on the listed cards by editing other information (image url, page, release year).
+
+- Change the order of AddBook and LenderListing, incorporating a card at the forefront of LenderListing that **describe guidance on adding a book**, along with a direct link to the section. This was initiated with CR2., which was subsequently reverted in CR3., leading to the implementation of the CR4. solution. CR4. allows users to navigate to the add book form for easy access.
+
+Implemented user stories are available for reference on the Trello board.
+
+## B - Utilising scrum
+
+Jozsef was acting as the Product Owner during the project. This meant he took care of tasks related to defining and prioritising the work. We considered the possibility of having one person handle both the Product Owner and Scrum Master roles and while it is not the best practice we went with that solution for the project. In my role as the developer, I formed the project team.
+
+At the project's outset, user stories were gathered by speaking with Jozsef, who then organised and ranked these stories in a list. Our collaboration came into play during our planning meetings, where we jointly decided which tasks to tackle in each sprint. After completing tasks, I received feedback during review sessions, which allowed me to make necessary changes and fixes based on the input received.
+
+We held short daily meetings to discuss my ongoing work progress, with Jozsef using Trello to monitor how things were advancing. The utilisation of Scrum principles is evident throughout this planning document as well, including the way we structured different levels of user stories, changes made during implementation, how trello was structured and used among others.
+
 ## R5 - Wireframes
 
 [BookSwap wireframes plan](https://www.figma.com/file/mGdliIbudJmbZTl0WUdvfE/bookSwap?type=design&node-id=0%3A1&mode=design&t=oiaLIOWpWt9wgLaB-1)  
@@ -177,6 +298,8 @@ Note: Connections using prototyping are also defined in the Figma version.
 
 The home page features a navigation bar that displays the site's logo, along with login and join buttons. Placing these buttons in the navigation bar ensures easy access, as the login process is essential for utilising the application. Furthermore, the home page also includes an image, an introduction, and a book section. These elements are for providing users with a clear understanding of the page's purpose and content.
 For easy contact with the company, the footer of every page includes social media icons.
+
+- Note: the social media icons in the footer are only for display, they are not functional
 
 | Desktop | Tablet | Mobile |
 |---------|--------|--------|
@@ -215,8 +338,7 @@ The current card-based solution provides an intuitive and user-friendly interfac
 
 As per our previous agreement with Jozsef, following the data flow diagram and wireframing, user stories will be revised and updated as the next step.
 
-|  Implemented version - updates |
-|----------------|
+## B - Wireframes updates
 
 After reaching an agreement to implement an edit modal for book and listing details, high-level connections were promptly updated as follows.
 
@@ -338,4 +460,69 @@ The following day, I began working on the login and join functions. Initially, I
 ![User story 3](./docs/Trello_us3_update_2023-07-12.png)
 ![User story 3](./docs/Trello_us3_update_eod_2023-07-12.png)
 
-The Trello Board will be utilised throughout the project and will be regularly updated on both the client and server repositories from now on.
+## B - Trello Board Updates
+
+Trello was continued to us as task delegation with tickets assigned to me labelled with difficulty level and corresponding Git commits, so Jozsef was able to track the project progress and visually see what I was talking about during out daily standups.
+
+The application was deployed early to resolve issues as soon as possible regarding the deployment.
+![Deployment](./docs/trello_part_b/Trello_deployment_%202023-07-17.png)
+
+Following the deployment, I concluded the Home page implementation.
+![HomePage](./docs/trello_part_b/Trello_HomePage_2023-07-17.png)
+![23.07.17 EOD](./docs/trello_part_b/Trello_EOD_2023-07-17.png)
+
+For the next sprint these user stories were setup and their progress tracked as can be seen below.
+
+![Sprint plan](./docs/trello_part_b/Trello_sod_setup_for_the_week_2023-07-18%20123901.png)
+![us4](./docs/trello_part_b/Trello_us4_eod_2023-07-18%20124911.png)
+![us4 done](./docs/trello_part_b/Trello_us4_done_2023-07-19.png)
+![us5 done](./docs/trello_part_b/Trello_us5_done_%202023-07-25%20165747.png)
+![us6](./docs/trello_part_b/Trello_us6_setup_2023-07-20.png)
+![us6 done](./docs/trello_part_b/Trello_us6_done_eod_2023-07-20.png)
+![Trello_us7_setup_2023-07-21](./docs/trello_part_b/Trello_us7_setup_2023-07-21.png)
+![Trello_us7_done_eod_2023-07-21](./docs/trello_part_b/Trello_us7_done_eod_2023-07-21.png)
+
+The subsequent sprint setup was designed to accommodate a higher task volume within the week, leveraging the foundational work laid out in the preceding user stories. These tasks were tracked as follows.
+![Trello_sod_ 2023-07-24](./docs/trello_part_b/Trello_sod_%202023-07-24.png)
+![Trello_us8_done_GH_2023-07-25](./docs/trello_part_b/Trello_us8_done_GH_2023-07-25.png)
+![Trello_us8_done_ 2023-07-25 165747](./docs/trello_part_b/Trello_us8_done_%202023-07-25%20165747.png)
+![Trello_us9_done_GH_2023-07-25](./docs/trello_part_b/Trello_us9_done_GH_2023-07-25.png)
+![Trello_us9_done_2023-07-25](./docs/trello_part_b/Trello_us9_done_2023-07-25.png)
+![Trello_EOD_2023-07-25](./docs/trello_part_b/Trello_EOD_2023-07-25.png)
+![Trello_us10_2023-07-26](./docs/trello_part_b/Trello_%20us10_2023-07-26.png)
+![Trello_us11_2023-07-26](./docs/trello_part_b/Trello_us11_2023-07-26.png)
+![Trello_us11_done_2023-07-26](./docs/trello_part_b/Trello_us11_done_2023-07-26.png)
+![Trello_us12_2023-07-26](./docs/trello_part_b/Trello_us12_2023-07-26.png)
+![Trello_us12_done_2023-07-26](./docs/trello_part_b/Trello_us12_done_2023-07-26.png)
+![Trello_us13_2023-07-26](./docs/trello_part_b/Trello_us13_2023-07-26.png)
+![Trello_us13_done_2023-07-26](./docs/trello_part_b/Trello_us13_done_2023-07-26.png)
+![Trello_us14_2023-07-26](./docs/trello_part_b/Trello_us14_2023-07-26.png)
+![Trello_us14_done_2023-07-26](./docs/trello_part_b/Trello_us14_done_2023-07-26.png)
+![Trello_eod_2023-07-26](./docs/trello_part_b/Trello_eod_2023-07-26.png)
+![Trello_us10_done_ 2023-07-26](./docs/trello_part_b/Trello_%20us10_2023-07-26.png)
+
+As per the agreed upon strategy post-MVP development, supplementary advanced tasks were incorporated into the development pipeline. Capitalising on new insights, two user stories were introduced to elevate the overall user experience. These user stories were evolved as can be seen below.
+![Trello_us15_a_2023-07-27](./docs/trello_part_b/Trello_us15_a_2023-07-27.png)
+![Trello_us15_b_2023-07-27](./docs/trello_part_b/Trello_us15_b_2023-07-27.png)
+![Trello_us16_a_2023-07-27](./docs/trello_part_b/Trello_us16_a_2023-07-27.png)
+![Trello_us16_b_2023-07-27](./docs/trello_part_b/Trello_us16_b_2023-07-27.png)
+![Trello_us16_b_done_2023-07-27](./docs/trello_part_b/Trello_us16_b_done_2023-07-27.png)
+![Trello_us15_a_done_hg_2023-07-27](./docs/trello_part_b/Trello_us15_a_done_hg_2023-07-27.png)
+![Trello_us15_a_done_task_2023-07-27](./docs/trello_part_b/Trello_us15_a_done_task_2023-07-27.png)
+![Trello_us15_b_done_2023-07-27](./docs/trello_part_b/Trello_us15_b_done_2023-07-27.png)
+![Trello_us16_a_done_2023-07-27](./docs/trello_part_b/Trello_us16_a_done_2023-07-27.png)
+
+During the concluding sprint, the focus shifted towards backend refactoring, encompassing database seeding and comprehensive testing. Additionally, accepted change requests were developed, and subsequent fixes resulting from the test outcomes were addressed.
+
+![Trello_CRs_Fixes_seed_refactor_ 2023-07-31](./docs/trello_part_b/Trello_CRs_Fixes_seed_refactor_%202023-07-31.png)
+![Trello_data_seed_2023-07-31](./docs/trello_part_b/Trello_data_seed_2023-07-31.png)
+![Trello_backend_refactor2023-07-31](./docs/trello_part_b/Trello_backend_refactor2023-07-31.png)
+![Trello_EOD_ 2023-07-31](./docs/trello_part_b/Trello_EOD_%202023-07-31.png)
+![Trello_automata_tests_2023-08-01](./docs/trello_part_b/Trello_automata_tests_2023-08-01.png)
+![Trello_automata_tests_done_2023-08-01](./docs/trello_part_b/Trello_automata_tests_done_2023-08-01.png)
+![Trello_automata_tests_done_gh_2023-08-01](./docs/trello_part_b/Trello_automata_tests_done_gh_2023-08-01.png)
+![Trello_EOD_tests_2023-08-01](./docs/trello_part_b/Trello_EOD_tests_2023-08-01.png)
+![Trello_fixes_following_test_ 2023-08-02](./docs/trello_part_b/Trello_fixes_following_test_%202023-08-02.png)
+![Trello_fixes_done_gh_2023-08-02](./docs/trello_part_b/Trello_fixes_done_gh_2023-08-02.png)
+![Trello_dev_test_done_2023-08-02](./docs/trello_part_b/Trello_dev_test_done_2023-08-02.png)
+![Trello_prod_test2023-08-02](./docs/trello_part_b/Trello_prod_test2023-08-02.png)
