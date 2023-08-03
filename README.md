@@ -75,6 +75,27 @@ The target audience for BookSwap includes book enthusiasts and avid readers who 
 | DevOps Tools      | [GitHub Desktop](https://desktop.github.com/), [GitHub](https://github.com/), [VS Code](https://code.visualstudio.com/)     |
 | Design Tools      | [Figma](https://www.figma.com), [Logo](https://logo.com/), [Draw.io](https://app.diagrams.net/)                           |
 
+## R1-B - Implemented functionalities
+
+As the implementation progressed using scrum, the scope naturally evolved, leading to minor adjustments in order to accurately describe the functionalities.
+
+### 1. Minimal Value Product
+
+- User Registration: Users can join and create an account to access the functionalities of the application.
+- User Login: Users can log in to access the functionalities of the application.
+- User Logout: Users can log out to ensure the protection and privacy of their information and prevent unauthorised access.
+- Add and Edit Books: Lenders can add books to the database of BookSwap and have the option to edit the details of the books they have contributed to the database.
+- Book Listing Management for Lenders: Lenders can create, list, update their status, and delete their book listings.
+- Book Search for Borrowers: Borrowers can search for books based on the title and in the result list view basic book information and lender's name and email.
+- Borrowers can contact lenders externally via email for communicating about lending details.
+
+### 2. Advanced functionalities
+
+- Additional Information for Listed Books: Lenders can provide additional details such as location and condition for their listed books.
+- Enhance Additional Information: Lenders can update the extra provided data as needed.
+- Advanced Book Search: Borrowers can search for books using various search criteria.
+- Search result is updated with to display the additional data.
+
 ## R2-B - Libraries used in the project
 
 ### Server Libraries
