@@ -355,6 +355,25 @@ Jozsef was acting as the Product Owner during the project. This meant he took ca
 
 At the project's start, user stories were gathered by speaking with Jozsef, who then organised and ranked these stories in a list. Our collaboration came into play during our planning meetings, where we jointly decided which tasks to tackle in each sprint.
 
+- Sprint 1:
+   -  Foundational structures for both the backend and frontend components.
+   -  Set up authentication mechanisms to ensure secure access.
+   -  User stories 1 to 3.
+   -  Both frontend and backend deployment, MongoAtlas setup.
+
+- Sprint 2:
+   -  User stories 4 to 7
+
+- Sprint 3:
+   - User stories 8 to 16
+
+- Sprint 4:
+   - Backend refactoring
+   - Testing of the system, including automated tests.
+   - client testing to validate system functionality.
+   - Address issues identified during testing and refined the solution.
+   - Change Rrequests 1-4
+
 After completing tasks, I received feedback during review sessions, which allowed me to make necessary changes and fixes based on the input received.
 
 We held short daily meetings to discuss my ongoing work progress, with Jozsef using Trello to monitor how things were advancing. The utilisation of Scrum principles is evident throughout this planning document as well, including the way we structured different levels of user stories, changes made during implementation, how trello was structured and used among others.
@@ -459,7 +478,6 @@ During the development process of the borrowing page, the customer requested a c
 - Additionally, there was a need to present borrowed items in search results, enabling borrowers to determine if a book is currently unavailable but might become accessible at a later stage. This feature ensures that borrowers are aware of the book's existence in the system, making it easier for them to plan their borrowing accordingly. 
 - Depending on the status of the borrowing process (available or borrowed), the cards dynamically present different colors, allowing for easy visual identification.
 
-
 | Desktop | Tablet | Mobile |
 |---------|--------|--------|
 |![Desktop borrowing implemented](./docs/wireframes_implemented/Desktop_Borrowing.png)|  ![Tablet borrowing implemented ](./docs/wireframes_implemented/Tablet_Borrowing.png)    |  ![Mobile borrowing implemented](./docs/wireframes_implemented/Mobile_Borrowing.png)      |
@@ -491,9 +509,14 @@ The Edit Modal was introduced to enable users to edit both book and listing deta
 |---------|--------|--------|
 |![Desktop lending implemented](./docs/wireframes_implemented/Desktop_Edit.png)|  ![Tablet lending implemented](./docs/wireframes_implemented/Tablet_Edit.png)    |  ![Mobile lending implemented](./docs/wireframes_implemented/Mobile_Edit.png)      |
 
-## R6 - Trello Board
-
+## Trello Board
 [BookSwap Trello Board](https://trello.com/b/BfJSkwUq/bookswap)
+
+To open the trello board a section and find the corresponding images, simply click on the triangle icon in front of to the Trello Board A or on the Trello Board A itself.
+
+<details>
+
+<summary> Trello Board A </summary>
 
 Initial setup of the Trello Board for the documentation of the project.
 
@@ -527,14 +550,21 @@ Following that, the Trello Board was refreshed with the requirements specific to
 Difficulty levels were assigned to the technical stories and later to user stories and requirements to provide a clear definition of their complexity.
 
 ![Technical user stories](./docs/Trello_setup_technical_stories_difficulties_2023-07-10%20090813.png)
-![Example technical sotry](./docs/Trello_example_backend_ts_2023-07-10.png)
+![Example technical story](./docs/Trello_example_backend_ts_2023-07-10.png)
 
-Subsequently, both the backend and frontend structures were established.
+</details>
+
+
+## B - Trello Board Updates
+
+Trello was continued to us as task delegation with tickets assigned to me labelled with difficulty level and corresponding Git commits, so Jozsef was able to track the project progress and visually see what I was talking about during out daily standups.
+
+During the first sprint, both the backend and frontend structures were established.
 
 ![Backend, frontend foundational structures](./docs/Trello_development_1_2023-07-10.png)
 ![EOD 2023-07-10](./docs/Trello_EOD_2023-07-10.png)
 
-The following day, I began working on the login and join functions. Initially, I created the backend, followed by incorporating the frontend elements such as the NavBar and buttons to initiate the authentication process. The progress of these tasks is represented by the displayed cards below.
+The following day still as part as the first sprint, I began working on the login and join functions. Initially, I created the backend, followed by incorporating the frontend elements such as the NavBar and buttons to initiate the authentication process. The progress of these tasks is represented by the displayed cards below.
 
 ![Authentication](./docs/Trello_sod_2023-07-11.png)
 ![Authentication 2](./docs/Trello_sod_2023-07-12.png)
@@ -544,10 +574,6 @@ The following day, I began working on the login and join functions. Initially, I
 ![User story 2](./docs/Trello_us2_update_eod_2023-07-12.png)
 ![User story 3](./docs/Trello_us3_update_2023-07-12.png)
 ![User story 3](./docs/Trello_us3_update_eod_2023-07-12.png)
-
-## B - Trello Board Updates
-
-Trello was continued to us as task delegation with tickets assigned to me labelled with difficulty level and corresponding Git commits, so Jozsef was able to track the project progress and visually see what I was talking about during out daily standups.
 
 The application was deployed early to resolve issues as soon as possible regarding the deployment.
 ![Deployment](./docs/trello_part_b/Trello_deployment_%202023-07-17.png)
