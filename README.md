@@ -266,6 +266,14 @@ Furthermore, two change requests were successfully executed:
 
 Implemented user stories are available for reference on the Trello board.
 
+## B - Utilising scrum
+
+Jozsef was acting as the Product Owner during the project. This meant he took care of tasks related to defining and prioritising the work. We considered the possibility of having one person handle both the Product Owner and Scrum Master roles and while it is not the best practice we went with that solution for the project. In my role as the developer, I formed the project team.
+
+At the project's outset, user stories were gathered by speaking with Jozsef, who then organised and ranked these stories in a list. Our collaboration came into play during our planning meetings, where we jointly decided which tasks to tackle in each sprint. After completing tasks, I received feedback during review sessions, which allowed me to make necessary changes and fixes based on the input received.
+
+We held short daily meetings to discuss my ongoing work progress, with Jozsef using Trello to monitor how things were advancing. The utilisation of Scrum principles is evident throughout this planning document as well, including the way we structured different levels of user stories, changes made during implementation, how trello was structured and used among others.
+
 ## R5 - Wireframes
 
 [BookSwap wireframes plan](https://www.figma.com/file/mGdliIbudJmbZTl0WUdvfE/bookSwap?type=design&node-id=0%3A1&mode=design&t=oiaLIOWpWt9wgLaB-1)  
