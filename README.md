@@ -649,3 +649,6 @@ During the concluding sprint (4), the focus shifted towards backend refactoring,
 ![Trello_fixes_done_gh_2023-08-02](./docs/trello_part_b/Trello_fixes_done_gh_2023-08-02.png)
 ![Trello_dev_test_done_2023-08-02](./docs/trello_part_b/Trello_dev_test_done_2023-08-02.png)
 ![Trello_prod_test2023-08-02](./docs/trello_part_b/Trello_prod_test2023-08-02.png)
+
+Final Chapter: This marks the end of the project's journey.
+![Project done](./docs/trello_part_b/Trello_project_done_2023-08-04.png)
