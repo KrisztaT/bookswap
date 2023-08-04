@@ -12,6 +12,7 @@
 [BookSwap Deployed Server](https://bookswap-server-kt-2962369e5914.herokuapp.com/)
 
 Note: To facilitate easier identification throughout the documentation, updates,changes and tasks specific to Part B of the project are marked with the 'B' identifier.
+Tip: When using the application, incorporating data from https://openlibrary.org/ for book-related information, including URLs, is the easiest way. However, please note that during peak usage periods of openlibrary, images fetched from this source might occasionally experience loading delays.
 
 ## B - Installation Guide
 
@@ -378,6 +379,18 @@ After completing tasks, I received feedback during review sessions, which allowe
 
 We held short daily meetings to discuss my ongoing work progress, with Jozsef using Trello to monitor how things were advancing. The utilisation of Scrum principles is evident throughout this planning document as well, including the way we structured different levels of user stories, changes made during implementation, how trello was structured and used among others.
 
+## B - Tests
+
+[Development backend test using Postman](./docs/backend_test/dev/development_postman_test_result.md)
+
+[Production backend test using Postman](./docs/backend_test/prod/production_postman_test_result.md)
+
+[Development frontend test](https://docs.google.com/spreadsheets/d/1gfhn0GAJQJwqCxw9bZp86INdmRKzptnI/edit?usp=sharing&ouid=110723405371608563593&rtpof=true&sd=true)
+
+[Production customer frontend test](https://docs.google.com/spreadsheets/d/1FcqtlSQFCvXF_mo9ty76po_5CsxdQe8_/edit?usp=sharing&ouid=110723405371608563593&rtpof=true&sd=true)
+
+Note: Excel sheets also can be found in the ``./docs/frontend_test`` folder if the links do not work.
+
 ## R5 - Wireframes
 
 [BookSwap wireframes plan](https://www.figma.com/file/mGdliIbudJmbZTl0WUdvfE/bookSwap?type=design&node-id=0%3A1&mode=design&t=oiaLIOWpWt9wgLaB-1)  
@@ -554,7 +567,6 @@ Difficulty levels were assigned to the technical stories and later to user stori
 
 </details>
 
-
 ## B - Trello Board Updates
 
 Trello was continued to us as task delegation with tickets assigned to me labelled with difficulty level and corresponding Git commits, so Jozsef was able to track the project progress and visually see what I was talking about during out daily standups.
@@ -582,7 +594,7 @@ Following the deployment, I concluded the Home page implementation.
 ![HomePage](./docs/trello_part_b/Trello_HomePage_2023-07-17.png)
 ![23.07.17 EOD](./docs/trello_part_b/Trello_EOD_2023-07-17.png)
 
-For the next sprint these user stories were setup and their progress tracked as can be seen below.
+For the sprint 2 these user stories were setup and their progress tracked as can be seen below.
 
 ![Sprint plan](./docs/trello_part_b/Trello_sod_setup_for_the_week_2023-07-18%20123901.png)
 ![us4](./docs/trello_part_b/Trello_us4_eod_2023-07-18%20124911.png)
@@ -593,7 +605,7 @@ For the next sprint these user stories were setup and their progress tracked as 
 ![Trello_us7_setup_2023-07-21](./docs/trello_part_b/Trello_us7_setup_2023-07-21.png)
 ![Trello_us7_done_eod_2023-07-21](./docs/trello_part_b/Trello_us7_done_eod_2023-07-21.png)
 
-The subsequent sprint setup was designed to accommodate a higher task volume within the week, leveraging the foundational work laid out in the preceding user stories. These tasks were tracked as follows.
+The subsequent sprint (3) setup was designed to accommodate a higher task volume within the week, leveraging the foundational work laid out in the preceding user stories. These tasks were tracked as follows.
 ![Trello_sod_ 2023-07-24](./docs/trello_part_b/Trello_sod_%202023-07-24.png)
 ![Trello_us8_done_GH_2023-07-25](./docs/trello_part_b/Trello_us8_done_GH_2023-07-25.png)
 ![Trello_us8_done_ 2023-07-25 165747](./docs/trello_part_b/Trello_us8_done_%202023-07-25%20165747.png)
@@ -623,7 +635,7 @@ As per the agreed upon strategy post-MVP development, supplementary advanced tas
 ![Trello_us15_b_done_2023-07-27](./docs/trello_part_b/Trello_us15_b_done_2023-07-27.png)
 ![Trello_us16_a_done_2023-07-27](./docs/trello_part_b/Trello_us16_a_done_2023-07-27.png)
 
-During the concluding sprint, the focus shifted towards backend refactoring, encompassing database seeding and comprehensive testing. Additionally, accepted change requests were developed, and subsequent fixes resulting from the test outcomes were addressed.
+During the concluding sprint (4), the focus shifted towards backend refactoring, encompassing database seeding and comprehensive testing. Additionally, accepted change requests were developed, and subsequent fixes resulting from the test outcomes were addressed.
 
 ![Trello_CRs_Fixes_seed_refactor_ 2023-07-31](./docs/trello_part_b/Trello_CRs_Fixes_seed_refactor_%202023-07-31.png)
 ![Trello_data_seed_2023-07-31](./docs/trello_part_b/Trello_data_seed_2023-07-31.png)
