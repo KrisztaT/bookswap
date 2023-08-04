@@ -12,6 +12,90 @@
 [BookSwap Deployed Server](https://bookswap-server-kt-2962369e5914.herokuapp.com/)
 
 Note: To facilitate easier identification throughout the documentation, updates,changes and tasks specific to Part B of the project are marked with the 'B' identifier.
+Tip: When using the application, incorporating data from https://openlibrary.org/ for book-related information, including URLs, is the easiest way. However, please note that during peak usage periods of openlibrary, images fetched from this source might occasionally experience loading delays.
+
+## B - Installation Guide
+
+Follow the steps outlined below to perform a local installation of both the server and client components on your computer.
+
+### System Requirements
+
+- NodeJS version v19.8.1
+
+### Server Installation
+
+1. Create a directory named `bookswap` and navigate into it:
+   ```bash
+   $ mkdir bookswap && cd bookswap
+   ```
+2. Clone the server repository from GitHub or unzip the provided file.
+    ```bash
+    $ git clone git@github.com:KrisztaT/bookswap-server.git
+    or
+    $ unzip KrisztinaTesenyi_T3A2-B.zip
+   ```
+3. Go to the server folder. (In case file was provided use the second line.)
+   ```bash
+   $ cd bookwap-server
+   or
+   $ cd KrisztinaTesenyi_T3A2-B.zip/src/bookswap-server
+   ```
+4. Install the required npm packages:
+   ```bash
+   $ npm install
+   ```
+5. Create your `.env` file, if it was not provided, with appropriate DATABASE_URL(s) and JWT_SECRET values.
+6. You can seed your local database using the following command:
+    ```bash
+   $ npm run seed-dev
+   ```
+7. Launch the server using the following command:
+   ```bash
+   $ npm run dev
+   ```
+   You now have access to the API through Postman or by navigating to localhost:3001/ in your web browser. In case a different port is used, please adjust the frontend settings to ensure communication between frontend and backend.
+
+8. To run tests, first make sure that DATABASE_URL_TEST is defined in your `.env` file. Then to seed the test database use the command:
+   ```bash
+   $ npm run seed-test
+   ```
+9. After seeding the test database, you can execute tests as well and view the results along with test coverage using:
+   ```bash
+   $ npm run test-cc
+   ```
+
+## Client Installation
+
+1. Open your terminal and navigate to the `bookswap` folder:
+   ```bash
+   $ cd bookswap
+   ```
+2. Clone the client repository from GitHub:
+   ```bash
+   $ git clone git@github.com:KrisztaT/bookswap-client.git
+   ```
+3. Go to the client folder. (In case file was provided use the second line.)
+   ```bash
+   $ cd bookswap-client
+   or
+   $ cd KrisztinaTesenyi_T3A2-B.zip/src/bookswap-client
+   ```
+4. Install the required npm packages:
+   ```bash
+   $ npm install
+   ```
+5. Create your `.env` file, if it was not provided, with appropriate BACKEND
+_URL(s).
+6. Start the client server with the following command:
+   ```bash
+   $ npm start
+    ```
+      The client server will automatically run on http://localhost:3000/ by default, and this URL is configured in the CORS settings. Therefore, if a different port is used, both the backend and frontend components will require modification to ensure the communication between them.
+
+6. To run tests use the command:
+   ```bash
+   $ npm test
+   ```
 
 ## R1 - Description of the website
 
@@ -104,7 +188,7 @@ As the implementation progressed using scrum, the descriptions naturally evolved
 
 `bcrypt (^5.1.0)`: Bcrypt is used for hashing passwords and it provides a secure way to hash and compare passwords, making it difficult for attackers to reverse-engineer the original passwords from the hashes.
 
-`cors (^2.8.5)`: CORS (Cross-Origin Resource Sharing) is a security feature that allows or restricts web resources (such as APIs) to be requested from different domains. The cors library helps in handling CORS headers and settings, making it easier to control and secure the communication between the app's frontend and backend. It's important to note that the application is configured to operate within the local context of "http://localhost:3000" in case of local run. For the application to function correctly from alternative hosts, configuration adjustments are required in both the backend and frontend.
+`cors (^2.8.5)`: CORS (Cross-Origin Resource Sharing) is a security feature that allows or restricts web resources (such as APIs) to be requested from different domains. The cors library helps in handling CORS headers and settings, making it easier to control and secure the communication between the app's frontend and backend. It's important to note that the application is configured to operate within the local context of "http://localhost:3000" in case of local run. For the application to function correctly from alternative hosts, configuration adjustments are required in the backend.
 
 `dotenv (^16.3.1)`: Dotenv allows the load of environment variables from a .env file into the app's process environment. It is used to keep sensitive configuration details (like database URLs, API keys, etc.) separate from the codebase and safely stored.
 
@@ -270,9 +354,42 @@ Implemented user stories are available for reference on the Trello board.
 
 Jozsef was acting as the Product Owner during the project. This meant he took care of tasks related to defining and prioritising the work. We considered the possibility of having one person handle both the Product Owner and Scrum Master roles and while it is not the best practice we went with that solution for the project. In my role as the developer, I formed the project team.
 
-At the project's outset, user stories were gathered by speaking with Jozsef, who then organised and ranked these stories in a list. Our collaboration came into play during our planning meetings, where we jointly decided which tasks to tackle in each sprint. After completing tasks, I received feedback during review sessions, which allowed me to make necessary changes and fixes based on the input received.
+At the project's start, user stories were gathered by speaking with Jozsef, who then organised and ranked these stories in a list. Our collaboration came into play during our planning meetings, where we jointly decided which tasks to tackle in each sprint.
+
+- Sprint 1:
+   -  Foundational structures for both the backend and frontend components.
+   -  Set up authentication mechanisms to ensure secure access.
+   -  User stories 1 to 3.
+   -  Both frontend and backend deployment, MongoAtlas setup.
+
+- Sprint 2:
+   -  User stories 4 to 7
+
+- Sprint 3:
+   - User stories 8 to 16
+
+- Sprint 4:
+   - Backend refactoring
+   - Testing of the system, including automated tests.
+   - client testing to validate system functionality.
+   - Address issues identified during testing and refined the solution.
+   - Change Rrequests 1-4
+
+After completing tasks, I received feedback during review sessions, which allowed me to make necessary changes and fixes based on the input received.
 
 We held short daily meetings to discuss my ongoing work progress, with Jozsef using Trello to monitor how things were advancing. The utilisation of Scrum principles is evident throughout this planning document as well, including the way we structured different levels of user stories, changes made during implementation, how trello was structured and used among others.
+
+## B - Tests
+
+[Development backend test using Postman](./docs/backend_test/dev/development_postman_test_result.md)
+
+[Production backend test using Postman](./docs/backend_test/prod/production_postman_test_result.md)
+
+[Development frontend test](https://docs.google.com/spreadsheets/d/1gfhn0GAJQJwqCxw9bZp86INdmRKzptnI/edit?usp=sharing&ouid=110723405371608563593&rtpof=true&sd=true)
+
+[Production customer frontend test](https://docs.google.com/spreadsheets/d/1FcqtlSQFCvXF_mo9ty76po_5CsxdQe8_/edit?usp=sharing&ouid=110723405371608563593&rtpof=true&sd=true)
+
+Note: Excel sheets also can be found in the ``./docs/frontend_test`` folder if the links do not work.
 
 ## R5 - Wireframes
 
@@ -340,7 +457,7 @@ As per our previous agreement with Jozsef, following the data flow diagram and w
 
 ## B - Wireframes updates
 
-After reaching an agreement to implement an edit modal for book and listing details, high-level connections were promptly updated as follows.
+After reaching an agreement to implement an edit modal for book and listing details, high-level connections were updated as follows.
 
 ![High level connections implemented](./docs/high_level_functions_and_page_connections_implemented.png)
 
@@ -374,7 +491,6 @@ During the development process of the borrowing page, the customer requested a c
 - Additionally, there was a need to present borrowed items in search results, enabling borrowers to determine if a book is currently unavailable but might become accessible at a later stage. This feature ensures that borrowers are aware of the book's existence in the system, making it easier for them to plan their borrowing accordingly. 
 - Depending on the status of the borrowing process (available or borrowed), the cards dynamically present different colors, allowing for easy visual identification.
 
-
 | Desktop | Tablet | Mobile |
 |---------|--------|--------|
 |![Desktop borrowing implemented](./docs/wireframes_implemented/Desktop_Borrowing.png)|  ![Tablet borrowing implemented ](./docs/wireframes_implemented/Tablet_Borrowing.png)    |  ![Mobile borrowing implemented](./docs/wireframes_implemented/Mobile_Borrowing.png)      |
@@ -406,9 +522,14 @@ The Edit Modal was introduced to enable users to edit both book and listing deta
 |---------|--------|--------|
 |![Desktop lending implemented](./docs/wireframes_implemented/Desktop_Edit.png)|  ![Tablet lending implemented](./docs/wireframes_implemented/Tablet_Edit.png)    |  ![Mobile lending implemented](./docs/wireframes_implemented/Mobile_Edit.png)      |
 
-## R6 - Trello Board
-
+## Trello Board
 [BookSwap Trello Board](https://trello.com/b/BfJSkwUq/bookswap)
+
+To open the trello board a section and find the corresponding images, simply click on the triangle icon in front of to the Trello Board A or on the Trello Board A itself.
+
+<details>
+
+<summary> Trello Board A </summary>
 
 Initial setup of the Trello Board for the documentation of the project.
 
@@ -442,14 +563,20 @@ Following that, the Trello Board was refreshed with the requirements specific to
 Difficulty levels were assigned to the technical stories and later to user stories and requirements to provide a clear definition of their complexity.
 
 ![Technical user stories](./docs/Trello_setup_technical_stories_difficulties_2023-07-10%20090813.png)
-![Example technical sotry](./docs/Trello_example_backend_ts_2023-07-10.png)
+![Example technical story](./docs/Trello_example_backend_ts_2023-07-10.png)
 
-Subsequently, both the backend and frontend structures were established.
+</details>
+
+## B - Trello Board Updates
+
+Trello was continued to us as task delegation with tickets assigned to me labelled with difficulty level and corresponding Git commits, so Jozsef was able to track the project progress and visually see what I was talking about during out daily standups.
+
+During the first sprint, both the backend and frontend structures were established.
 
 ![Backend, frontend foundational structures](./docs/Trello_development_1_2023-07-10.png)
 ![EOD 2023-07-10](./docs/Trello_EOD_2023-07-10.png)
 
-The following day, I began working on the login and join functions. Initially, I created the backend, followed by incorporating the frontend elements such as the NavBar and buttons to initiate the authentication process. The progress of these tasks is represented by the displayed cards below.
+The following day still as part as the first sprint, I began working on the login and join functions. Initially, I created the backend, followed by incorporating the frontend elements such as the NavBar and buttons to initiate the authentication process. The progress of these tasks is represented by the displayed cards below.
 
 ![Authentication](./docs/Trello_sod_2023-07-11.png)
 ![Authentication 2](./docs/Trello_sod_2023-07-12.png)
@@ -460,10 +587,6 @@ The following day, I began working on the login and join functions. Initially, I
 ![User story 3](./docs/Trello_us3_update_2023-07-12.png)
 ![User story 3](./docs/Trello_us3_update_eod_2023-07-12.png)
 
-## B - Trello Board Updates
-
-Trello was continued to us as task delegation with tickets assigned to me labelled with difficulty level and corresponding Git commits, so Jozsef was able to track the project progress and visually see what I was talking about during out daily standups.
-
 The application was deployed early to resolve issues as soon as possible regarding the deployment.
 ![Deployment](./docs/trello_part_b/Trello_deployment_%202023-07-17.png)
 
@@ -471,7 +594,7 @@ Following the deployment, I concluded the Home page implementation.
 ![HomePage](./docs/trello_part_b/Trello_HomePage_2023-07-17.png)
 ![23.07.17 EOD](./docs/trello_part_b/Trello_EOD_2023-07-17.png)
 
-For the next sprint these user stories were setup and their progress tracked as can be seen below.
+For the sprint 2 these user stories were setup and their progress tracked as can be seen below.
 
 ![Sprint plan](./docs/trello_part_b/Trello_sod_setup_for_the_week_2023-07-18%20123901.png)
 ![us4](./docs/trello_part_b/Trello_us4_eod_2023-07-18%20124911.png)
@@ -482,7 +605,7 @@ For the next sprint these user stories were setup and their progress tracked as 
 ![Trello_us7_setup_2023-07-21](./docs/trello_part_b/Trello_us7_setup_2023-07-21.png)
 ![Trello_us7_done_eod_2023-07-21](./docs/trello_part_b/Trello_us7_done_eod_2023-07-21.png)
 
-The subsequent sprint setup was designed to accommodate a higher task volume within the week, leveraging the foundational work laid out in the preceding user stories. These tasks were tracked as follows.
+The subsequent sprint (3) setup was designed to accommodate a higher task volume within the week, leveraging the foundational work laid out in the preceding user stories. These tasks were tracked as follows.
 ![Trello_sod_ 2023-07-24](./docs/trello_part_b/Trello_sod_%202023-07-24.png)
 ![Trello_us8_done_GH_2023-07-25](./docs/trello_part_b/Trello_us8_done_GH_2023-07-25.png)
 ![Trello_us8_done_ 2023-07-25 165747](./docs/trello_part_b/Trello_us8_done_%202023-07-25%20165747.png)
@@ -512,7 +635,7 @@ As per the agreed upon strategy post-MVP development, supplementary advanced tas
 ![Trello_us15_b_done_2023-07-27](./docs/trello_part_b/Trello_us15_b_done_2023-07-27.png)
 ![Trello_us16_a_done_2023-07-27](./docs/trello_part_b/Trello_us16_a_done_2023-07-27.png)
 
-During the concluding sprint, the focus shifted towards backend refactoring, encompassing database seeding and comprehensive testing. Additionally, accepted change requests were developed, and subsequent fixes resulting from the test outcomes were addressed.
+During the concluding sprint (4), the focus shifted towards backend refactoring, encompassing database seeding and comprehensive testing. Additionally, accepted change requests were developed, and subsequent fixes resulting from the test outcomes were addressed.
 
 ![Trello_CRs_Fixes_seed_refactor_ 2023-07-31](./docs/trello_part_b/Trello_CRs_Fixes_seed_refactor_%202023-07-31.png)
 ![Trello_data_seed_2023-07-31](./docs/trello_part_b/Trello_data_seed_2023-07-31.png)
@@ -526,3 +649,6 @@ During the concluding sprint, the focus shifted towards backend refactoring, enc
 ![Trello_fixes_done_gh_2023-08-02](./docs/trello_part_b/Trello_fixes_done_gh_2023-08-02.png)
 ![Trello_dev_test_done_2023-08-02](./docs/trello_part_b/Trello_dev_test_done_2023-08-02.png)
 ![Trello_prod_test2023-08-02](./docs/trello_part_b/Trello_prod_test2023-08-02.png)
+
+Final Chapter: This marks the end of the project's journey.
+![Project done](./docs/trello_part_b/Trello_project_done_2023-08-04.png)
