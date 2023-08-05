@@ -12,6 +12,7 @@
 [BookSwap Deployed Server](https://bookswap-server-kt-2962369e5914.herokuapp.com/)
 
 Note: To facilitate easier identification throughout the documentation, updates,changes and tasks specific to Part B of the project are marked with the 'B' identifier.
+
 Tip: When using the application, incorporating data from https://openlibrary.org/ for book-related information, including URLs, is the easiest way. However, please note that during peak usage periods of openlibrary, images fetched from this source might occasionally experience loading delays.
 
 ## B - Installation Guide
@@ -456,6 +457,8 @@ The current card-based solution provides an intuitive and user-friendly interfac
 As per our previous agreement with Jozsef, following the data flow diagram and wireframing, user stories will be revised and updated as the next step.
 
 ## B - Wireframes updates
+
+[BookSwap wireframes implemented](https://www.figma.com/file/7ZBxOuQQCnpehCSvLL0ZEa/bookSwap_finished?type=design&node-id=0-1&mode=design&t=dMBEuIfGqRTjpyEY-0)
 
 After reaching an agreement to implement an edit modal for book and listing details, high-level connections were updated as follows.
 
