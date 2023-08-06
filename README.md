@@ -15,6 +15,10 @@ Note: To facilitate easier identification throughout the documentation, updates,
 
 Tip: When using the application, incorporating data from https://openlibrary.org/ for book-related information, including URLs, is the easiest way. However, please note that during peak usage periods of openlibrary, images fetched from this source might occasionally experience loading delays.
 
+The seed data includes four users, testUser, kriszta, jozsef, and jennifer, designed for fast application testing. To facilitate quick access, the password for all of them is set to '123456'. Alternatively, you can register a new user.
+
+Short presentation about how to use the application and its workflow can be found: `./ppt/BookSwap.pdf`
+
 ## B - Installation Guide
 
 Follow the steps outlined below to perform a local installation of both the server and client components on your computer.
@@ -46,7 +50,7 @@ Follow the steps outlined below to perform a local installation of both the serv
    $ npm install
    ```
 5. Create your `.env` file, if it was not provided, with appropriate DATABASE_URL(s) and JWT_SECRET values.
-6. You can seed your local database using the following command:
+6. You can seed your local database using the following command **after mongodb service was started**.
     ```bash
    $ npm run seed-dev
    ```
@@ -172,7 +176,7 @@ As the implementation progressed using scrum, the descriptions naturally evolved
 - User Login: Users can log in to access the functionalities of the application.
 - User Logout: Users can log out to ensure the protection and privacy of their information and prevent unauthorised access.
 - **Add and Edit Books: Lenders can add books to the database of BookSwap and have the option to edit the details of the books they have contributed to the database.**
-- Book Listing Management for Lenders: Lenders can create, list, update their status, and delete their book listings.
+- Book Listing Management for Lenders: Lenders can create, list, update their status when the book was borrowed or returned, and delete their book listings.
 - Book Search for Borrowers: Borrowers can search for books based on the title and in the result list view basic book information and lender's name and email.
 - Borrowers can contact lenders externally via email for communicating about lending details.
 
@@ -386,11 +390,11 @@ We held short daily meetings to discuss my ongoing work progress, with Jozsef us
 
 [Production backend test using Postman](./docs/backend_test/prod/production_postman_test_result.md)
 
-[Development frontend test](https://docs.google.com/spreadsheets/d/1gfhn0GAJQJwqCxw9bZp86INdmRKzptnI/edit?usp=sharing&ouid=110723405371608563593&rtpof=true&sd=true)
+[Development manual frontend tests](https://docs.google.com/spreadsheets/d/1gfhn0GAJQJwqCxw9bZp86INdmRKzptnI/edit?usp=sharing&ouid=110723405371608563593&rtpof=true&sd=true)
 
-[Production customer frontend test](https://docs.google.com/spreadsheets/d/1FcqtlSQFCvXF_mo9ty76po_5CsxdQe8_/edit?usp=sharing&ouid=110723405371608563593&rtpof=true&sd=true)
+[Production manual customer frontend test](https://docs.google.com/spreadsheets/d/1FcqtlSQFCvXF_mo9ty76po_5CsxdQe8_/edit?usp=sharing&ouid=110723405371608563593&rtpof=true&sd=true)
 
-Note: Excel sheets also can be found in the ``./docs/frontend_test`` folder if the links do not work.
+Note: Pdfs also can be found in the ``./docs/frontend_test`` folder if the links do not work.
 
 ## R5 - Wireframes
 
